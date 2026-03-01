@@ -63,6 +63,33 @@
             min-height: max(884px, 100dvh);
         }
     </style>
+    <style>
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate-fade-in {
+            animation: fadeInUp 0.8s ease-out forwards;
+            opacity: 0;
+        }
+
+        .delay-100 { animation-delay: 0.1s; }
+        .delay-200 { animation-delay: 0.2s; }
+        .delay-300 { animation-delay: 0.3s; }
+        .delay-500 { animation-delay: 0.5s; }
+        
+        /* Smooth transitions for all links and buttons */
+        a, button {
+            transition: all 0.3s ease;
+        }
+    </style>
 </head>
 
 <body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 antialiased">
@@ -98,7 +125,7 @@
     <main class="flex flex-col min-h-screen pb-0 pt-[110px] md:pt-[84px]">
         <!-- Title Section -->
         <section class="px-6 pt-10 pb-8">
-            <h1 class="text-4xl font-extrabold tracking-tighter text-slate-100 mb-2 italic">SERVICIOS <span
+            <h1 class="animate-fade-in text-4xl font-extrabold tracking-tighter text-slate-100 mb-2 italic">SERVICIOS <span
                     class="text-primary">ELITE</span></h1>
             <div class="w-16 h-1 bg-primary mb-6"></div>
             <p class="text-slate-400 text-lg leading-snug max-w-xs">
@@ -108,7 +135,7 @@
         <!-- Services List -->
         <section class="flex flex-col px-4 gap-2">
             <!-- Service 01 -->
-            <div class="group relative flex items-center justify-between p-6 rounded-xl bg-neutral-dark/40 border border-white/5 hover:border-primary/50 transition-all cursor-pointer"
+            <div class="animate-fade-in delay-200 group relative flex items-center justify-between p-6 rounded-xl bg-neutral-dark/40 border border-white/5 hover:border-primary/50 transition-all cursor-pointer"
                 onclick="window.location.href='https://wa.me/59171654992?text=Hola%2C%20me%20gustar%C3%ADa%20reservar%20una%20sesi%C3%B3n%20fotogr%C3%A1fica.%20Me%20interesa%20el%20servicio%20cobertura%20de%20eventos.'">
                 <div class="flex items-center gap-6">
                     <span
@@ -127,7 +154,7 @@
                     class="material-symbols-outlined text-primary group-hover:translate-x-1 transition-transform">chevron_right</span>
             </div>
             <!-- Service 02 -->
-            <div class="group relative flex items-center justify-between p-6 rounded-xl bg-neutral-dark/40 border border-white/5 hover:border-primary/50 transition-all cursor-pointer"
+            <div class="animate-fade-in delay-200 group relative flex items-center justify-between p-6 rounded-xl bg-neutral-dark/40 border border-white/5 hover:border-primary/50 transition-all cursor-pointer"
                 onclick="window.location.href='https://wa.me/59171654992?text=Hola%2C%20me%20gustar%C3%ADa%20reservar%20una%20sesi%C3%B3n%20fotogr%C3%A1fica.%20Me%20interesa%20el%20servicio%20sesiones%20individuales.'">
                 <div class="flex items-center gap-6">
                     <span
@@ -140,7 +167,7 @@
                 <span class="material-symbols-outlined text-primary">chevron_right</span>
             </div>
             <!-- Service 03 -->
-            <div class="group relative flex items-center justify-between p-6 rounded-xl bg-neutral-dark/40 border border-white/5 hover:border-primary/50 transition-all cursor-pointer"
+            <div class="animate-fade-in delay-200 group relative flex items-center justify-between p-6 rounded-xl bg-neutral-dark/40 border border-white/5 hover:border-primary/50 transition-all cursor-pointer"
                 onclick="window.location.href='https://wa.me/59171654992?text=Hola%2C%20me%20gustar%C3%ADa%20reservar%20una%20sesi%C3%B3n%20fotogr%C3%A1fica.%20Me%20interesa%20el%20servicio%20torneos%20completos.'">
                 <div class="flex items-center gap-6">
                     <span
@@ -153,7 +180,7 @@
                 <span class="material-symbols-outlined text-primary">chevron_right</span>
             </div>
             <!-- Service 04 -->
-            <div class="group relative flex items-center justify-between p-6 rounded-xl bg-neutral-dark/40 border border-white/5 hover:border-primary/50 transition-all cursor-pointer"
+            <div class="animate-fade-in delay-200 group relative flex items-center justify-between p-6 rounded-xl bg-neutral-dark/40 border border-white/5 hover:border-primary/50 transition-all cursor-pointer"
                 onclick="window.location.href='https://wa.me/59171654992?text=Hola%2C%20me%20gustar%C3%ADa%20reservar%20una%20sesi%C3%B3n%20fotogr%C3%A1fica.%20Me%20interesa%20el%20servicio%20campañas%20para%20marcas.'">
                 <div class="flex items-center gap-6">
                     <span

@@ -81,6 +81,33 @@
             letter-spacing: 0.5em;
         }
     </style>
+    <style>
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate-fade-in {
+            animation: fadeInUp 0.8s ease-out forwards;
+            opacity: 0;
+        }
+
+        .delay-100 { animation-delay: 0.1s; }
+        .delay-200 { animation-delay: 0.2s; }
+        .delay-300 { animation-delay: 0.3s; }
+        .delay-500 { animation-delay: 0.5s; }
+        
+        /* Smooth transitions for all links and buttons */
+        a, button {
+            transition: all 0.3s ease;
+        }
+    </style>
 </head>
 
 <body
@@ -222,7 +249,7 @@
                 style="background-image: linear-gradient(rgba(18, 8, 9, 0.7), rgba(18, 8, 9, 0.7)), url('https://lh3.googleusercontent.com/aida-public/AB6AXuAfkIIsGQFRPoHBfV2QBpxTN8s1YpIB6XsZ9tVvnGJAnk2toFlKEh1MmvKspyp4c47rUDZ-Z4iK5Al3a_3VTrPeGsNVHz-F74-RxjAoyBaWo99jqlxUfz27nePGcsFCDYc_5n_F_6HwwaFFs5hcx1ccu_MsYqxUnONnf6w_dI7tbuptG70khAYRMnHBm-kfnUAZusQmuoDqbc3HfkpNTXEOUtyt0KeDY_w8nsvMOxEbBqHN-1odEbUv93L9JCOBEfh7qNioQH2Xg');">
                 <div class="absolute inset-0 flex flex-col items-center justify-center text-center p-6">
                     <span class="text-primary text-xs font-black tracking-[0.8em] uppercase mb-6">Elite Session</span>
-                    <h2 class="text-4xl lg:text-7xl font-black uppercase tracking-tighter mb-4 max-w-4xl">La Fortaleza
+                    <h2 class="animate-fade-in text-4xl lg:text-7xl font-black uppercase tracking-tighter mb-4 max-w-4xl">La Fortaleza
                         del Altiplano</h2>
                     <p class="text-slate-300 max-w-xl text-sm font-light uppercase tracking-widest leading-relaxed">
                         Un reportaje exclusivo sobre el entrenamiento a 3,600 metros de altura.

@@ -64,6 +64,33 @@
       min-height: max(884px, 100dvh);
     }
   </style>
+    <style>
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate-fade-in {
+            animation: fadeInUp 0.8s ease-out forwards;
+            opacity: 0;
+        }
+
+        .delay-100 { animation-delay: 0.1s; }
+        .delay-200 { animation-delay: 0.2s; }
+        .delay-300 { animation-delay: 0.3s; }
+        .delay-500 { animation-delay: 0.5s; }
+        
+        /* Smooth transitions for all links and buttons */
+        a, button {
+            transition: all 0.3s ease;
+        }
+    </style>
 </head>
 
 <body

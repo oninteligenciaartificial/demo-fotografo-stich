@@ -57,6 +57,33 @@
             margin-top: 2rem;
         }
     </style>
+    <style>
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate-fade-in {
+            animation: fadeInUp 0.8s ease-out forwards;
+            opacity: 0;
+        }
+
+        .delay-100 { animation-delay: 0.1s; }
+        .delay-200 { animation-delay: 0.2s; }
+        .delay-300 { animation-delay: 0.3s; }
+        .delay-500 { animation-delay: 0.5s; }
+        
+        /* Smooth transitions for all links and buttons */
+        a, button {
+            transition: all 0.3s ease;
+        }
+    </style>
 </head>
 
 <body
@@ -107,9 +134,9 @@
                     class="inline-block bg-primary/20 text-primary border border-primary/30 px-3 py-1 text-[10px] font-bold tracking-[0.3em] uppercase mb-6">
                     Premium Sports Photography • Bolivia
                 </span>
-                <h1 class="text-6xl md:text-8xl font-black leading-[0.9] tracking-tighter uppercase mb-8">
+                <h1 class="animate-fade-in text-6xl md:text-8xl font-black leading-[0.9] tracking-tighter uppercase mb-8">
                     Capturamos la <br><span class="text-primary italic">intensidad</span>&nbsp;</h1>
-                <p class="text-lg md:text-xl text-slate-400 max-w-2xl mb-10 leading-relaxed font-light">
+                <p class="animate-fade-in delay-200 text-lg md:text-xl text-slate-400 max-w-2xl mb-10 leading-relaxed font-light">
                     Elevamos la imagen de atletas de alto rendimiento y marcas deportivas a través de una narrativa
                     visual agresiva, técnica y cinematográfica.
                 </p>
@@ -132,7 +159,7 @@
         <section class="py-24 px-6 lg:px-40 bg-neutral-dark">
             <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
                 <div
-                    class="group p-8 border border-white/5 bg-background-dark/40 hover:border-primary/50 transition-all rounded-xl">
+                    class="animate-fade-in delay-300 group p-8 border border-white/5 bg-background-dark/40 hover:border-primary/50 transition-all rounded-xl">
                     <span
                         class="material-symbols-outlined text-primary text-5xl mb-6 block group-hover:scale-110 transition-transform">history_edu</span>
                     <h3 class="text-2xl font-bold mb-4 uppercase tracking-tight">Narrativa Visual</h3>
@@ -140,7 +167,7 @@
                         tu disciplina, el sudor, la preparación y la gloria final.</p>
                 </div>
                 <div
-                    class="group p-8 border border-white/5 bg-background-dark/40 hover:border-primary/50 transition-all rounded-xl">
+                    class="animate-fade-in delay-300 group p-8 border border-white/5 bg-background-dark/40 hover:border-primary/50 transition-all rounded-xl">
                     <span
                         class="material-symbols-outlined text-primary text-5xl mb-6 block group-hover:scale-110 transition-transform">timer_10_alt_1</span>
                     <h3 class="text-2xl font-bold mb-4 uppercase tracking-tight">Momento Decisivo</h3>
@@ -148,7 +175,7 @@
                         esfuerzo se convierte en leyenda. Precisión técnica absoluta.</p>
                 </div>
                 <div
-                    class="group p-8 border border-white/5 bg-background-dark/40 hover:border-primary/50 transition-all rounded-xl">
+                    class="animate-fade-in delay-300 group p-8 border border-white/5 bg-background-dark/40 hover:border-primary/50 transition-all rounded-xl">
                     <span
                         class="material-symbols-outlined text-primary text-5xl mb-6 block group-hover:scale-110 transition-transform">trophy</span>
                     <h3 class="text-2xl font-bold mb-4 uppercase tracking-tight">Elevación de Marca</h3>
@@ -165,7 +192,7 @@
                 <div class="h-1.5 w-24 bg-primary"></div>
             </div>
             <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-                <div class="relative group aspect-[3/4] overflow-hidden rounded-lg">
+                <div class="animate-fade-in delay-500 relative group aspect-[3/4] overflow-hidden rounded-lg">
                     <img alt="Tennis player"
                         class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                         data-alt="Dynamic shot of tennis player serving ball"
@@ -175,7 +202,7 @@
                         <span class="text-white font-black text-2xl uppercase tracking-widest italic">Tenis</span>
                     </div>
                 </div>
-                <div class="relative group aspect-[3/4] overflow-hidden rounded-lg translate-y-8">
+                <div class="animate-fade-in delay-500 relative group aspect-[3/4] overflow-hidden rounded-lg translate-y-8">
                     <img alt="Racing car"
                         class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                         data-alt="High speed racing car on track at sunset"
@@ -185,7 +212,7 @@
                         <span class="text-white font-black text-2xl uppercase tracking-widest italic">Motorsport</span>
                     </div>
                 </div>
-                <div class="relative group aspect-[3/4] overflow-hidden rounded-lg">
+                <div class="animate-fade-in delay-500 relative group aspect-[3/4] overflow-hidden rounded-lg">
                     <img alt="Basketball player"
                         class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                         data-alt="Basketball player dunking in outdoor court"
@@ -195,7 +222,7 @@
                         <span class="text-white font-black text-2xl uppercase tracking-widest italic">Básquetbol</span>
                     </div>
                 </div>
-                <div class="relative group aspect-[3/4] overflow-hidden rounded-lg translate-y-8">
+                <div class="animate-fade-in delay-500 relative group aspect-[3/4] overflow-hidden rounded-lg translate-y-8">
                     <img alt="Cyclist"
                         class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                         data-alt="Cyclist riding on mountain road in mist"
@@ -216,7 +243,7 @@
                 <div class="absolute inset-0 bg-primary/10 mix-blend-multiply"></div>
             </div>
             <div class="w-full md:w-1/2 bg-neutral-dark p-12 md:p-24 flex flex-col justify-center">
-                <h2 class="text-4xl md:text-5xl font-black uppercase tracking-tighter mb-8 leading-[1.1]">Tu
+                <h2 class="animate-fade-in text-4xl md:text-5xl font-black uppercase tracking-tighter mb-8 leading-[1.1]">Tu
                     imagen es el activo más valioso de tu carrera.</h2>
                 <div class="space-y-8">
                     <div class="flex gap-6">
@@ -250,7 +277,7 @@
         <section class="py-24 px-6 lg:px-40 bg-background-dark">
             <h2 class="text-3xl font-black uppercase tracking-widest mb-16 text-center">Nuestros Servicios</h2>
             <div class="divide-y divide-white/10 border-t border-b border-white/10">
-                <div class="group py-12 flex flex-col md:flex-row md:items-center justify-between hover:px-8 transition-all duration-500 cursor-pointer"
+                <div class="animate-fade-in group py-12 flex flex-col md:flex-row md:items-center justify-between hover:px-8 transition-all duration-500 cursor-pointer"
                     onclick="window.location.href='https://wa.me/59171654992?text=Hola%2C%20me%20gustar%C3%ADa%20reservar%20una%20sesi%C3%B3n%20fotogr%C3%A1fica.%20Me%20interesa%20el%20servicio%20cobertura%20de%20eventos.'">
                     <h3 class="text-3xl md:text-5xl font-black uppercase group-hover:text-primary transition-colors">
                         Cobertura de Eventos</h3>
@@ -261,7 +288,7 @@
                             class="material-symbols-outlined text-4xl group-hover:translate-x-2 transition-transform">trending_flat</span>
                     </div>
                 </div>
-                <div class="group py-12 flex flex-col md:flex-row md:items-center justify-between hover:px-8 transition-all duration-500 cursor-pointer"
+                <div class="animate-fade-in group py-12 flex flex-col md:flex-row md:items-center justify-between hover:px-8 transition-all duration-500 cursor-pointer"
                     onclick="window.location.href='https://wa.me/59171654992?text=Hola%2C%20me%20gustar%C3%ADa%20reservar%20una%20sesi%C3%B3n%20fotogr%C3%A1fica.%20Me%20interesa%20el%20servicio%20sesiones%20individuales.'">
                     <h3 class="text-3xl md:text-5xl font-black uppercase group-hover:text-primary transition-colors">
                         Sesiones Individuales</h3>
@@ -272,7 +299,7 @@
                             class="material-symbols-outlined text-4xl group-hover:translate-x-2 transition-transform">trending_flat</span>
                     </div>
                 </div>
-                <div class="group py-12 flex flex-col md:flex-row md:items-center justify-between hover:px-8 transition-all duration-500 cursor-pointer"
+                <div class="animate-fade-in group py-12 flex flex-col md:flex-row md:items-center justify-between hover:px-8 transition-all duration-500 cursor-pointer"
                     onclick="window.location.href='https://wa.me/59171654992?text=Hola%2C%20me%20gustar%C3%ADa%20reservar%20una%20sesi%C3%B3n%20fotogr%C3%A1fica.%20Me%20interesa%20el%20servicio%20torneos%20completos.'">
                     <h3 class="text-3xl md:text-5xl font-black uppercase group-hover:text-primary transition-colors">
                         Torneos Completos</h3>
