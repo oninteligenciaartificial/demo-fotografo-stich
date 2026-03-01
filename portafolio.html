@@ -1,0 +1,301 @@
+﻿<!DOCTYPE html>
+
+<html class="dark" lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Elite Sports Photography | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100;300;400;500;600;700;800&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#d41132",
+                        "background-light": "#f8f6f6",
+                        "background-dark": "#120809",
+                        "neutral-dark": "#1c0d0f",
+                        "border-dark": "#32181b",
+                    },
+                    fontFamily: {
+                        "display": ["Lexend", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+    <style>
+        .masonry-grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 1.5rem;
+        }
+
+        .grayscale-hover {
+            filter: grayscale(100%);
+            transition: filter 0.5s ease, transform 0.5s ease;
+        }
+
+        .grayscale-hover:hover {
+            filter: grayscale(0%);
+            transform: scale(1.02);
+        }
+
+        .sticky-nav {
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+
+        .text-spacing-widest {
+            letter-spacing: 0.5em;
+        }
+    </style>
+</head>
+
+<body
+    class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 selection:bg-primary selection:text-white pb-24">
+    <header
+        class="sticky top-0 z-50 w-full border-b border-primary/10 bg-background-light/80 dark:bg-background-dark/80 sticky-nav px-6 lg:px-20 py-4">
+        <nav class="flex items-center justify-between max-w-7xl mx-auto">
+            <div class="flex items-center gap-3 cursor-pointer" onclick="window.location.href='index.html'">
+                <div class="bg-primary p-1.5 rounded-sm">
+                    <span class="material-symbols-outlined text-white text-2xl">sports_score</span>
+                </div>
+                <h1 class="text-xl font-extrabold tracking-tighter uppercase">Elite <span
+                        class="text-primary">Bolivia</span></h1>
+            </div>
+            <div class="hidden md:flex items-center gap-10">
+                <a class="text-xs font-bold uppercase tracking-widest hover:text-primary transition-colors"
+                    href="index.html">Inicio</a>
+                <a class="text-xs font-bold uppercase tracking-widest hover:text-primary transition-colors"
+                    href="portafolio.html">Portafolio</a>
+                <a class="text-xs font-bold uppercase tracking-widest hover:text-primary transition-colors"
+                    href="servicios.html">Servicios</a>
+                <a class="text-xs font-bold uppercase tracking-widest hover:text-primary transition-colors"
+                    href="sobre-mi.html">Sobre mí</a>
+            </div>
+            <button
+                class="bg-primary hover:bg-primary/90 text-white px-6 py-2 text-xs font-black uppercase tracking-widest transition-all rounded-sm"
+                onclick="window.location.href='https://wa.me/59171654992?text=Hola%2C%20me%20gustar%C3%ADa%20reservar%20una%20sesi%C3%B3n%20fotogr%C3%A1fica.'">
+                Reservar Sesión
+            </button>
+        </nav>
+    </header>
+    <main class="max-w-7xl mx-auto px-6 lg:px-20 py-12">
+        <section class="mb-16">
+            <div class="flex flex-col md:flex-row md:items-end justify-between gap-8 border-b border-primary/20 pb-8">
+                <div>
+                    <h2 class="text-5xl lg:text-7xl font-black uppercase tracking-tighter leading-none mb-4">
+                        Visual <br /><span class="text-primary">Impact.</span>
+                    </h2>
+                    <p class="text-slate-500 dark:text-slate-400 max-w-md text-sm font-light uppercase tracking-widest">
+                        Capturing the raw intensity of Bolivian sports excellence.</p>
+                </div>
+                <div class="flex flex-wrap gap-8">
+                    <a class="group relative pb-2" href="#">
+                        <span class="text-xs font-black uppercase tracking-widest">All Work</span>
+                        <div class="absolute bottom-0 left-0 w-full h-0.5 bg-primary"></div>
+                    </a>
+                    <a class="group relative pb-2 text-slate-400 hover:text-slate-100 transition-colors" href="#">
+                        <span class="text-xs font-black uppercase tracking-widest">Fútbol</span>
+                        <div class="absolute bottom-0 left-0 w-0 group-hover:w-full h-0.5 bg-primary transition-all">
+                        </div>
+                    </a>
+                    <a class="group relative pb-2 text-slate-400 hover:text-slate-100 transition-colors" href="#">
+                        <span class="text-xs font-black uppercase tracking-widest">Atletismo</span>
+                        <div class="absolute bottom-0 left-0 w-0 group-hover:w-full h-0.5 bg-primary transition-all">
+                        </div>
+                    </a>
+                    <a class="group relative pb-2 text-slate-400 hover:text-slate-100 transition-colors" href="#">
+                        <span class="text-xs font-black uppercase tracking-widest">Tenis</span>
+                        <div class="absolute bottom-0 left-0 w-0 group-hover:w-full h-0.5 bg-primary transition-all">
+                        </div>
+                    </a>
+                    <a class="group relative pb-2 text-slate-400 hover:text-slate-100 transition-colors" href="#">
+                        <span class="text-xs font-black uppercase tracking-widest">Ciclismo</span>
+                        <div class="absolute bottom-0 left-0 w-0 group-hover:w-full h-0.5 bg-primary transition-all">
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="masonry-grid pb-20">
+            <div
+                class="col-span-12 lg:col-span-8 group relative overflow-hidden bg-neutral-dark aspect-[16/9] rounded-lg">
+                <div class="absolute inset-0 grayscale-hover bg-cover bg-center"
+                    data-alt="Action shot of a soccer match in a stadium"
+                    style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBoP0wcAZh6pFne-36pYEjkacdVBPgEdEnbEqkNhGOsTzl90BbTrlV_PbD_398AgHIFjM0Q7rY4YuMs8_SXeR-2GdvzgR-zuOluhg-Q7eulFVrceVrfgMsa2Rv2Vxi-fNsmleXradXKrFDzg5DoQC7WfjzLZZxAdHDW_6hHdr80rzdwugVdi67_jldUtYvi5yaUryrpdOUkLzZlAWL1mCWmbLkt6lBjoeaenNUQmPndARIwKfcq1SW8cb7uszoUDrKjRm4OOdU5fg');">
+                </div>
+                <div
+                    class="absolute inset-0 bg-gradient-to-t from-background-dark via-transparent opacity-0 group-hover:opacity-100 transition-opacity p-8 flex flex-col justify-end">
+                    <span class="text-primary text-xs font-black tracking-widest uppercase mb-2">Fútbol</span>
+                    <h3 class="text-2xl font-bold uppercase">CONMEBOL Libertadores 2024</h3>
+                    <div class="mt-4 flex items-center gap-2">
+                        <span class="material-symbols-outlined text-primary">add_circle</span>
+                        <span class="text-[10px] font-bold uppercase tracking-[0.3em]">View Project</span>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="col-span-12 lg:col-span-4 flex flex-col justify-center p-8 bg-primary/5 border border-primary/10 rounded-lg">
+                <span class="text-primary text-[10px] font-black tracking-[0.5em] uppercase mb-4">Misión</span>
+                <p class="text-2xl font-light italic leading-tight text-slate-300">
+                    "Detener el tiempo en el momento exacto donde el esfuerzo se convierte en <span
+                        class="text-primary font-bold">leyenda</span>."
+                </p>
+                <div class="mt-8 border-l-2 border-primary pl-4">
+                    <p class="text-xs font-bold uppercase tracking-widest">Velocidad</p>
+                    <p class="text-xs font-bold uppercase tracking-widest text-primary">Potencia</p>
+                    <p class="text-xs font-bold uppercase tracking-widest">Gloria</p>
+                </div>
+            </div>
+            <div
+                class="col-span-12 lg:col-span-4 group relative overflow-hidden bg-neutral-dark aspect-[3/4] rounded-lg">
+                <div class="absolute inset-0 grayscale-hover bg-cover bg-center"
+                    data-alt="High speed runner starting at the track"
+                    style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCSZpPUPQxRqUd5SCh_Mc4cmxGuV2_OAiT7pXHGPQRwHUPaMgoQJyoFYr6WshUUdBG7nHu2d8t3_RRI6qj76ALYOhJ4jjzdhcf5lfxVRqPKZWjiIO7sD9RGgsb4f3nodagIg7eIiPmXJEBqNkVvlx6XOBFvlClJr6V3Z-HWKrzXMB_OTWtVWC9cfYNeumabVxyMSgHvBIikTg5uj6SMf2qLkSq5pEHufobRm3i9RHFE5QjMNDXbz3QVQJIJL23J4w0NWL2yScliIg');">
+                </div>
+                <div
+                    class="absolute inset-0 bg-gradient-to-t from-background-dark via-transparent opacity-0 group-hover:opacity-100 transition-opacity p-6 flex flex-col justify-end">
+                    <h3 class="text-xl font-bold uppercase">Nacional de Atletismo</h3>
+                    <span class="text-primary text-xs font-black tracking-widest uppercase mt-1">Cochabamba</span>
+                </div>
+            </div>
+            <div
+                class="col-span-12 lg:col-span-4 group relative overflow-hidden bg-neutral-dark aspect-square rounded-lg">
+                <div class="absolute inset-0 grayscale-hover bg-cover bg-center"
+                    data-alt="Tennis player mid-serve close up"
+                    style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBue00GoQojv29iyDPBKaiKzZobha5jY5i_3eTPCoqpVi2XTLiZDaBcJHuuWPM0xSYIKrr8mM5kkrrxq_qT26PZ5cO02a_vgbMRb1f8qtizm9KxL7EPEbLFN3Xjb4SuF6J3HIzKfoAmyZqAZoitJqrnw0NKLGiD-ZrDBsLxlwtidYCe8Vt2mA1JGN3qAgEjSRQo9kdFcs8df0fqibBRj8hjAB5qw9Xo8_vcGdxfSIGKexKCd-dx_5I8Bi5Jfjw0KwdYsoiMBog');">
+                </div>
+                <div
+                    class="absolute inset-0 bg-gradient-to-t from-background-dark via-transparent opacity-0 group-hover:opacity-100 transition-opacity p-6 flex flex-col justify-end">
+                    <h3 class="text-xl font-bold uppercase">Copa Davis 2024</h3>
+                </div>
+            </div>
+            <div
+                class="col-span-12 lg:col-span-4 group relative overflow-hidden bg-neutral-dark aspect-[3/4] rounded-lg">
+                <div class="absolute inset-0 grayscale-hover bg-cover bg-center"
+                    data-alt="Cyclist climbing a steep mountain road"
+                    style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDDuM5VhSrvvhkYS1DcK5efeFaoNdDOI1Ovh9XYZJu1Avw3LKqeL9GZshB3qFspEN0ELeQH1bhcsFjfj72w51HGDedht2GZlriEZq93Suw5Z77Dm5XuXSmGxRBXG8gtRVI3wmTl5-9KroUV5pUFOAJDabgor_PsmQgpNgHDzwkC6TP49YQW3nnjPtFXkBkW_mfehVh3fG0nPP72NhhSTDNpo3qJPafspQH_ISMWiwfvccZg9TWIxYPJywGaRZAIbRCpB8oLQzjFsQ');">
+                </div>
+                <div
+                    class="absolute inset-0 bg-gradient-to-t from-background-dark via-transparent opacity-0 group-hover:opacity-100 transition-opacity p-6 flex flex-col justify-end">
+                    <h3 class="text-xl font-bold uppercase">Vuelta a Bolivia</h3>
+                </div>
+            </div>
+        </section>
+        <section class="w-full mb-20 relative overflow-hidden rounded-xl border border-primary/20">
+            <div class="h-[60vh] bg-cover bg-fixed bg-center relative"
+                data-alt="Wide cinematic shot of a stadium crowd under lights"
+                style="background-image: linear-gradient(rgba(18, 8, 9, 0.7), rgba(18, 8, 9, 0.7)), url('https://lh3.googleusercontent.com/aida-public/AB6AXuAfkIIsGQFRPoHBfV2QBpxTN8s1YpIB6XsZ9tVvnGJAnk2toFlKEh1MmvKspyp4c47rUDZ-Z4iK5Al3a_3VTrPeGsNVHz-F74-RxjAoyBaWo99jqlxUfz27nePGcsFCDYc_5n_F_6HwwaFFs5hcx1ccu_MsYqxUnONnf6w_dI7tbuptG70khAYRMnHBm-kfnUAZusQmuoDqbc3HfkpNTXEOUtyt0KeDY_w8nsvMOxEbBqHN-1odEbUv93L9JCOBEfh7qNioQH2Xg');">
+                <div class="absolute inset-0 flex flex-col items-center justify-center text-center p-6">
+                    <span class="text-primary text-xs font-black tracking-[0.8em] uppercase mb-6">Elite Session</span>
+                    <h2 class="text-4xl lg:text-7xl font-black uppercase tracking-tighter mb-4 max-w-4xl">La Fortaleza
+                        del Altiplano</h2>
+                    <p class="text-slate-300 max-w-xl text-sm font-light uppercase tracking-widest leading-relaxed">
+                        Un reportaje exclusivo sobre el entrenamiento a 3,600 metros de altura.
+                    </p>
+                    <button
+                        class="mt-10 border-2 border-white text-white hover:bg-white hover:text-background-dark px-10 py-4 text-xs font-black uppercase tracking-widest transition-all">
+                        Explorar Serie
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section class="masonry-grid mb-20">
+            <div
+                class="col-span-12 lg:col-span-6 group relative overflow-hidden bg-neutral-dark aspect-video rounded-lg">
+                <div class="absolute inset-0 grayscale-hover bg-cover bg-center"
+                    data-alt="Basketball player dunking in a dark gym"
+                    style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAwCgumdn5PKoOLVtJkLto_8vXlwYX-saV3Fp9ZNCjV_0CfJ-hd5Xpa7m5SpO5tHZ13aJqLc1jQNVbx6mD0Al319u5OMIObwzwWkjozAly8K11Z4BsdJSd8qndFamitPUF9oiSdTMbpAMKoO5sKwb6ZyE8vW2R87Lj3F3weeKVWiNkeNbLOfc11h7NevkrNLY8LmIk0auIDyi8xDQ2ncfj_YZS0Qx5fQtfTKz9L7LiIetQr0sEGRBZoR2iL-qoJWPG-n3tnwLw4kA');">
+                </div>
+                <div
+                    class="absolute inset-0 bg-gradient-to-t from-background-dark via-transparent opacity-0 group-hover:opacity-100 transition-opacity p-6 flex flex-col justify-end">
+                    <h3 class="text-xl font-bold uppercase">Libobasquet Finals</h3>
+                </div>
+            </div>
+            <div
+                class="col-span-12 lg:col-span-6 group relative overflow-hidden bg-neutral-dark aspect-video rounded-lg">
+                <div class="absolute inset-0 grayscale-hover bg-cover bg-center"
+                    data-alt="Swimmer underwater during a race"
+                    style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDzIWob0BNVKfRt8bCm0y5mbcVnKhXhvn23LHNzOa7jgVECHfkMBBPjE3UOk7ZcoiQ3nSAEK_Iyjdx9ooH5Iupb5_w5zR1nQqnz5zdNfREuZPK0oVCCsHdrQ9kP2B5unrKe-K9Lf1QusF4W8K1tW5FG5ozvZKoZEfa7Dttp8a5VDdoPYH1yT0CX8os_c97TADPImOZWxzlpAtWBYR0_EXJbaVCqog8pkSftvWpaRLD6cbYdyuCcty5GhCyZNQi966c4_62TJ89Odg');">
+                </div>
+                <div
+                    class="absolute inset-0 bg-gradient-to-t from-background-dark via-transparent opacity-0 group-hover:opacity-100 transition-opacity p-6 flex flex-col justify-end">
+                    <h3 class="text-xl font-bold uppercase">Sudamericano Natación</h3>
+                </div>
+            </div>
+        </section>
+        <section class="mb-20 text-center">
+            <h2 class="text-spacing-widest text-primary text-[10px] font-black uppercase mb-12">Categorías Destacadas
+            </h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="border border-primary/10 py-10 hover:bg-primary transition-colors group">
+                    <p class="text-xs font-bold uppercase tracking-widest group-hover:text-white">Velocidad</p>
+                </div>
+                <div class="border border-primary/10 py-10 hover:bg-primary transition-colors group">
+                    <p class="text-xs font-bold uppercase tracking-widest group-hover:text-white">Resistencia</p>
+                </div>
+                <div class="border border-primary/10 py-10 hover:bg-primary transition-colors group">
+                    <p class="text-xs font-bold uppercase tracking-widest group-hover:text-white">Precisión</p>
+                </div>
+                <div class="border border-primary/10 py-10 hover:bg-primary transition-colors group">
+                    <p class="text-xs font-bold uppercase tracking-widest group-hover:text-white">Emoción</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-neutral-dark border-t border-primary/20 py-24 px-6">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-4xl lg:text-6xl font-black uppercase tracking-tighter mb-8">
+                ¿Listo para tu <br /><span class="text-primary italic">próximo nivel?</span>
+            </h2>
+            <p class="text-slate-400 text-sm uppercase tracking-[0.3em] mb-12 font-light">
+                Reserva tu sesión ahora y captura la grandeza.
+            </p>
+            <div
+                class="mt-24 pt-8 border-t border-primary/10 flex flex-col md:flex-row items-center justify-between gap-6">
+                <div class="flex items-center gap-2">
+                    <span class="material-symbols-outlined text-primary">sports_score</span>
+                    <span class="text-xs font-bold tracking-widest uppercase">Elite Photography © 2024</span>
+                </div>
+                <div class="flex gap-8">
+                    <a class="text-[10px] font-black uppercase tracking-widest hover:text-primary transition-colors"
+                        href="#">Instagram</a>
+                    <a class="text-[10px] font-black uppercase tracking-widest hover:text-primary transition-colors"
+                        href="#">X / Twitter</a>
+                    <a class="text-[10px] font-black uppercase tracking-widest hover:text-primary transition-colors"
+                        href="#">Behance</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Floating WhatsApp -->
+    <a class="fixed bottom-24 right-8 z-[100] bg-[#25D366] text-white size-16 rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-transform"
+        href="https://wa.me/59171654992?text=Hola%2C%20me%20gustar%C3%ADa%20reservar%20una%20sesi%C3%B3n%20fotogr%C3%A1fica."
+        target="_blank">
+        <svg class="size-8 fill-current" viewBox="0 0 24 24">
+            <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.72.94 3.659 1.437 5.63 1.437h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z">
+            </path>
+        </svg>
+    </a>
+</body>
+
+</html>

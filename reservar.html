@@ -1,0 +1,198 @@
+﻿<!DOCTYPE html>
+
+<html class="dark" lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#d41132",
+            "background-light": "#f8f6f6",
+            "background-dark": "#050505",
+            "neutral-custom": "#1a1a1a",
+            "border-custom": "#333333",
+          },
+          fontFamily: {
+            "display": ["Space Grotesk", "sans-serif"]
+          },
+          borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+        },
+      },
+    }
+  </script>
+  <style>
+    body {
+      font-family: 'Space Grotesk', sans-serif;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .form-input:focus {
+      border-color: #d41132 !important;
+      box-shadow: 0 0 0 1px #d41132;
+    }
+  </style>
+  <style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+
+<body
+  class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 min-h-screen flex flex-col pb-24">
+  <!-- Top Navigation -->
+  <nav class="flex items-center justify-between p-6 bg-background-light dark:bg-background-dark">
+    <button class="flex items-center gap-2 group transition-colors hover:text-primary"
+      onclick="window.location.href='index.html'">
+      <span class="material-symbols-outlined text-2xl">arrow_back</span>
+      <span class="text-xs font-bold tracking-[0.2em] uppercase">Volver</span>
+    </button>
+    <div class="h-8 w-8 rounded-full bg-primary flex items-center justify-center">
+      <span class="material-symbols-outlined text-white text-sm">photo_camera</span>
+    </div>
+  </nav>
+  <main class="flex-1 px-6 pb-12 max-w-md mx-auto w-full">
+    <!-- Hero Title Section -->
+    <header class="pt-8 pb-10">
+      <h1 class="text-5xl font-bold leading-[0.9] tracking-tighter uppercase mb-4">
+        Reserva <br /> <span class="text-primary">Tu Momento</span>
+      </h1>
+      <p class="text-slate-500 dark:text-slate-400 text-lg font-light tracking-wide">
+        Eleva tu imagen deportiva hoy. Capturamos la potencia de tu disciplina.
+      </p>
+    </header>
+    <!-- Booking Form -->
+    <section class="space-y-6">
+      <div class="space-y-1.5">
+        <label class="text-[10px] uppercase tracking-[0.2em] font-bold text-slate-400 ml-1">Nombre Completo</label>
+        <input
+          class="form-input w-full bg-neutral-custom border-border-custom rounded-none h-14 px-4 text-white focus:outline-none transition-all placeholder:text-slate-600"
+          placeholder="Ej. Mateo Velasco" type="text" />
+      </div>
+      <div class="space-y-1.5">
+        <label class="text-[10px] uppercase tracking-[0.2em] font-bold text-slate-400 ml-1">Teléfono</label>
+        <div class="flex">
+          <div class="bg-neutral-custom border-y border-l border-border-custom flex items-center px-4 gap-2">
+            <span class="material-symbols-outlined text-primary text-xl">flag</span>
+            <span class="text-sm font-medium border-r border-border-custom pr-3">+591</span>
+          </div>
+          <input
+            class="form-input flex-1 bg-neutral-custom border-border-custom rounded-none h-14 px-4 text-white focus:outline-none transition-all placeholder:text-slate-600"
+            placeholder="700 00000" type="tel" />
+        </div>
+      </div>
+      <div class="space-y-1.5">
+        <label class="text-[10px] uppercase tracking-[0.2em] font-bold text-slate-400 ml-1">Disciplina Deportiva</label>
+        <div class="relative">
+          <select
+            class="form-input w-full bg-neutral-custom border-border-custom rounded-none h-14 px-4 text-white appearance-none focus:outline-none transition-all">
+            <option disabled="" selected="" value="">Selecciona tu deporte</option>
+            <option value="futbol">Fútbol</option>
+            <option value="tenis">Tenis</option>
+            <option value="atletismo">Atletismo</option>
+            <option value="crossfit">Crossfit / Fitness</option>
+            <option value="otro">Otro</option>
+          </select>
+          <span
+            class="material-symbols-outlined absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none text-slate-500">expand_more</span>
+        </div>
+      </div>
+      <div class="space-y-1.5">
+        <label class="text-[10px] uppercase tracking-[0.2em] font-bold text-slate-400 ml-1">Detalles del
+          Proyecto</label>
+        <textarea
+          class="form-input w-full bg-neutral-custom border-border-custom rounded-none p-4 text-white focus:outline-none transition-all placeholder:text-slate-600 resize-none"
+          placeholder="Cuéntanos sobre tu visión, locación o requerimientos específicos..." rows="4"></textarea>
+      </div>
+    </section>
+    <!-- Reassurance Section -->
+    <section class="mt-12 py-8 border-t border-border-custom">
+      <h3 class="text-[10px] uppercase tracking-[0.3em] font-black text-primary mb-6">¿Por qué elegirnos?</h3>
+      <div class="grid grid-cols-1 gap-4">
+        <div class="flex items-center gap-4">
+          <div class="h-10 w-10 flex items-center justify-center bg-primary/10 border border-primary/20">
+            <span class="material-symbols-outlined text-primary text-xl">speed</span>
+          </div>
+          <div>
+            <p class="text-sm font-bold uppercase tracking-tight">Entrega en 24h</p>
+            <p class="text-xs text-slate-500">Post-producción express para tus redes.</p>
+          </div>
+        </div>
+        <div class="flex items-center gap-4">
+          <div class="h-10 w-10 flex items-center justify-center bg-primary/10 border border-primary/20">
+            <span class="material-symbols-outlined text-primary text-xl">high_quality</span>
+          </div>
+          <div>
+            <p class="text-sm font-bold uppercase tracking-tight">Calidad 4K</p>
+            <p class="text-xs text-slate-500">Equipamiento cinematográfico de punta.</p>
+          </div>
+        </div>
+        <div class="flex items-center gap-4">
+          <div class="h-10 w-10 flex items-center justify-center bg-primary/10 border border-primary/20">
+            <span class="material-symbols-outlined text-primary text-xl">auto_awesome</span>
+          </div>
+          <div>
+            <p class="text-sm font-bold uppercase tracking-tight">Narrativa Visual</p>
+            <p class="text-xs text-slate-500">Contamos la historia de tu esfuerzo.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Primary CTA -->
+    <div class="mt-12">
+      <button
+        class="w-full bg-primary hover:bg-red-700 text-white py-6 font-black text-lg tracking-[0.1em] uppercase transition-all flex items-center justify-center gap-3"
+        onclick="window.location.href='https://wa.me/59171654992?text=Hola%2C%20me%20gustar%C3%ADa%20reservar%20una%20sesi%C3%B3n%20fotogr%C3%A1fica.'">
+        <span>Enviar por WhatsApp</span>
+        <span class="material-symbols-outlined">send</span>
+      </button>
+      <p class="text-center text-[10px] text-slate-500 mt-4 uppercase tracking-widest">Respuesta inmediata garantizada
+      </p>
+    </div>
+  </main>
+  <!-- Footer -->
+  <footer class="p-8 border-t border-border-custom bg-background-dark flex flex-col items-center gap-6">
+    <div class="flex items-center gap-2 text-slate-400">
+      <span class="material-symbols-outlined text-sm">location_on</span>
+      <span class="text-xs uppercase tracking-widest font-medium">Santa Cruz / La Paz, Bolivia</span>
+    </div>
+    <div class="flex gap-8">
+      <a class="text-slate-400 hover:text-primary transition-colors" href="#">
+        <span class="material-symbols-outlined">camera</span>
+      </a>
+      <a class="text-slate-400 hover:text-primary transition-colors" href="#">
+        <span class="material-symbols-outlined">play_circle</span>
+      </a>
+      <a class="text-slate-400 hover:text-primary transition-colors" href="#">
+        <span class="material-symbols-outlined">alternate_email</span>
+      </a>
+    </div>
+    <p class="text-[9px] text-slate-600 uppercase tracking-tighter">© 2024 Sports Visuals Bolivia. All Rights Reserved.
+    </p>
+  </footer>
+  <!-- Floating WhatsApp -->
+  <a class="fixed bottom-24 right-8 z-[100] bg-[#25D366] text-white size-16 rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-transform"
+    href="https://wa.me/59171654992?text=Hola%2C%20me%20gustar%C3%ADa%20reservar%20una%20sesi%C3%B3n%20fotogr%C3%A1fica."
+    target="_blank">
+    <svg class="size-8 fill-current" viewBox="0 0 24 24">
+      <path
+        d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.72.94 3.659 1.437 5.63 1.437h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z">
+      </path>
+    </svg>
+  </a>
+</body>
+
+</html>

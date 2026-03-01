@@ -1,0 +1,318 @@
+﻿<!DOCTYPE html>
+<html class="dark">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;600;700;800;900&amp;display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet">
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#d41132",
+                        "background-light": "#f8f6f6",
+                        "background-dark": "#0a0a0a",
+                        "neutral-dark": "#1a1a1a",
+                        "accent-gray": "#2a2a2a"
+                    },
+                    fontFamily: {
+                        "display": ["Lexend", "sans-serif"]
+                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Lexend', sans-serif;
+        }
+
+        .masonry-item:nth-child(even) {
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+
+<body
+    class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 antialiased overflow-x-hidden pb-24">
+    <div class="relative flex min-h-screen flex-col">
+        <!-- Header / Nav -->
+        <header
+            class="fixed top-0 z-50 w-full border-b border-white/5 bg-background-dark/80 backdrop-blur-md px-6 lg:px-20 py-4 flex items-center justify-between">
+            <div class="flex items-center gap-3 cursor-pointer" onclick="window.location.href='index.html'">
+                <span class="material-symbols-outlined text-primary text-3xl">sports_score</span>
+                <h2 class="text-xl font-black tracking-tighter uppercase italic">Estudio Deportivo</h2>
+            </div>
+            <nav class="hidden md:flex items-center gap-10">
+                <a class="text-sm font-semibold tracking-wide hover:text-primary transition-colors uppercase"
+                    href="index.html">Inicio</a>
+                <a class="text-sm font-semibold tracking-wide hover:text-primary transition-colors uppercase"
+                    href="portafolio.html">Portafolio</a>
+                <a class="text-sm font-semibold tracking-wide hover:text-primary transition-colors uppercase"
+                    href="servicios.html">Servicios</a>
+                <a class="text-sm font-semibold tracking-wide hover:text-primary transition-colors uppercase"
+                    href="sobre-mi.html">Sobre mí</a>
+            </nav>
+            <div class="flex gap-4">
+                <button
+                    class="bg-primary hover:bg-red-700 text-white px-6 py-2 rounded font-bold text-xs uppercase tracking-widest transition-all"
+                    onclick="window.location.href='https://wa.me/59171654992?text=Hola%2C%20me%20gustar%C3%ADa%20reservar%20una%20sesi%C3%B3n%20fotogr%C3%A1fica.'">
+                    Reservar Sesión
+                </button>
+            </div>
+        </header>
+        <!-- Hero Section -->
+        <section class="relative h-screen w-full flex items-center justify-start overflow-hidden pt-20">
+            <div class="absolute inset-0 z-0">
+                <div
+                    class="absolute inset-0 bg-gradient-to-r from-background-dark via-background-dark/60 to-transparent z-10">
+                </div>
+                <img alt="Soccer player mid-strike action" class="w-full h-full object-cover"
+                    data-alt="Professional soccer player kicking ball mid-action"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCFhN7A7eUqvrPeOqR9ywRuoERdAaU1TMqxVZjarIPfQkbXiZBjmkCyeltKdtEkW8qiwOmMx9nr3Llo5FyBHEDF5B05zlKPOaz-hAy-IVHfsWN0tbos78X3OIX_Y8yQdRdKGyol1gvNzb1Gt6XIBwGsK5XcenpdGWSqqky_tC3M3onkqQvT2mpeh8yR4uBD96IwPERBltN-Tn4yEXm8GcHGkj1C_DdolNkRKYyjqvmnXuNza6VzYEuymeUT92emt3YE98pmMft8Cg">
+            </div>
+            <div class="relative z-20 px-6 lg:px-40 max-w-5xl">
+                <span
+                    class="inline-block bg-primary/20 text-primary border border-primary/30 px-3 py-1 text-[10px] font-bold tracking-[0.3em] uppercase mb-6">
+                    Premium Sports Photography • Bolivia
+                </span>
+                <h1 class="text-6xl md:text-8xl font-black leading-[0.9] tracking-tighter uppercase mb-8">
+                    Capturamos la <br><span class="text-primary italic">intensidad</span>&nbsp;</h1>
+                <p class="text-lg md:text-xl text-slate-400 max-w-2xl mb-10 leading-relaxed font-light">
+                    Elevamos la imagen de atletas de alto rendimiento y marcas deportivas a través de una narrativa
+                    visual agresiva, técnica y cinematográfica.
+                </p>
+                <div class="flex flex-wrap gap-5">
+                    <button
+                        class="bg-primary hover:bg-red-700 text-white px-10 py-5 rounded font-black text-sm uppercase tracking-widest flex items-center gap-3 group transition-all"
+                        onclick="window.location.href='https://wa.me/59171654992?text=Hola%2C%20me%20gustar%C3%ADa%20reservar%20una%20sesi%C3%B3n%20fotogr%C3%A1fica.'">
+                        Reservar Sesión
+                        <span
+                            class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                    </button>
+                    <a href="portafolio.html"
+                        class="border border-white/20 hover:bg-white/10 text-white px-10 py-5 rounded font-black text-sm uppercase tracking-widest transition-all">Ver
+                        Portafolio
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- Value Proposition -->
+        <section class="py-24 px-6 lg:px-40 bg-neutral-dark">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                <div
+                    class="group p-8 border border-white/5 bg-background-dark/40 hover:border-primary/50 transition-all rounded-xl">
+                    <span
+                        class="material-symbols-outlined text-primary text-5xl mb-6 block group-hover:scale-110 transition-transform">history_edu</span>
+                    <h3 class="text-2xl font-bold mb-4 uppercase tracking-tight">Narrativa Visual</h3>
+                    <p class="text-slate-400 leading-relaxed">No solo tomamos fotos. Construimos la historia de
+                        tu disciplina, el sudor, la preparación y la gloria final.</p>
+                </div>
+                <div
+                    class="group p-8 border border-white/5 bg-background-dark/40 hover:border-primary/50 transition-all rounded-xl">
+                    <span
+                        class="material-symbols-outlined text-primary text-5xl mb-6 block group-hover:scale-110 transition-transform">timer_10_alt_1</span>
+                    <h3 class="text-2xl font-bold mb-4 uppercase tracking-tight">Momento Decisivo</h3>
+                    <p class="text-slate-400 leading-relaxed">Capturamos la milésima de segundo donde el
+                        esfuerzo se convierte en leyenda. Precisión técnica absoluta.</p>
+                </div>
+                <div
+                    class="group p-8 border border-white/5 bg-background-dark/40 hover:border-primary/50 transition-all rounded-xl">
+                    <span
+                        class="material-symbols-outlined text-primary text-5xl mb-6 block group-hover:scale-110 transition-transform">trophy</span>
+                    <h3 class="text-2xl font-bold mb-4 uppercase tracking-tight">Elevación de Marca</h3>
+                    <p class="text-slate-400 leading-relaxed">Transformamos tu perfil deportivo para atraer
+                        patrocinadores de élite y consolidar tu presencia digital.</p>
+                </div>
+            </div>
+        </section>
+        <!-- Featured Portfolio -->
+        <section class="py-24 px-6 lg:px-20 bg-background-dark">
+            <div class="flex flex-col items-center mb-16 text-center">
+                <h2 class="text-5xl md:text-6xl font-black uppercase tracking-tighter mb-4">Portafolio
+                    Destacado</h2>
+                <div class="h-1.5 w-24 bg-primary"></div>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="relative group aspect-[3/4] overflow-hidden rounded-lg">
+                    <img alt="Tennis player"
+                        class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                        data-alt="Dynamic shot of tennis player serving ball"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuAPu5mLJ5gNRueGvjX65Y4Z2x9bZi8eMzbtLyTnqrQ_VqECe0u9iBUJxtffxVRYPVFc7vB7Pw1nrKIO171fwY2jBO2miEei8-ugfTG54W3GZt2-1YCxi6FhFobuUbUpF71MsDwJ1i57COSY9TaiwVKccljGuuazBqOHGb9lREJeSwiDO0sT2Vts1pY5Z4zU_c7XsT3fD5zHg8SZvztrsTTIkRTDaeGYmsWOGeeMWiXZaXmDH0z8cSvjteW7zH5eYcB3E9HS4EDN0w">
+                    <div
+                        class="absolute inset-0 bg-primary/80 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                        <span class="text-white font-black text-2xl uppercase tracking-widest italic">Tenis</span>
+                    </div>
+                </div>
+                <div class="relative group aspect-[3/4] overflow-hidden rounded-lg translate-y-8">
+                    <img alt="Racing car"
+                        class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                        data-alt="High speed racing car on track at sunset"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuAmkO5dgT-d1I-phl1oqx-V8BspTXrlzs6Qzc2gROu-XbiZXwGpOPkE09oB0zp2nbnOYs5iiylR_8-m2i77kKXXnkuG2YEgDSNTK6THhNgt4_cflPre6Ije1KAKHYkfTVkDYsF0RFmxd2ujxjDfW1a9IgW1RXW0q4VXlbpqnOfYqKio9d9eLqsb_RHoZz7n-sSUoylwFDW6U1B_RQ9dpG_CzYtvzAxz-Mna3-45QXcucmTUjpPhIebTKPxxjHMBofkIxfhIRsEbMA">
+                    <div
+                        class="absolute inset-0 bg-primary/80 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                        <span class="text-white font-black text-2xl uppercase tracking-widest italic">Motorsport</span>
+                    </div>
+                </div>
+                <div class="relative group aspect-[3/4] overflow-hidden rounded-lg">
+                    <img alt="Basketball player"
+                        class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                        data-alt="Basketball player dunking in outdoor court"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuDmacekGnVk9lEAEdZfApDAQ4m9A3YNaqku7t65MWozydQbRKMIyWsKktR7JAtSwAWgyr5yUgX7QzX43q4_9thOAyJZV4iM9_1KQsM-yhFdcHFqgZXaG2YDfsWD0JcNr9EnqaGI7fvkmelHTrOVG9GrncycWs_qiXfkhKYFQYFJJgc-pLRO9fZn3BnneO_boffm1uryTwOHWNX0jdiCFe7etqLWOT15m1Pj4TyMzCxvv-yNOROwM_r9hgUI6SW3i1JwbU3gFhMzpg">
+                    <div
+                        class="absolute inset-0 bg-primary/80 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                        <span class="text-white font-black text-2xl uppercase tracking-widest italic">Básquetbol</span>
+                    </div>
+                </div>
+                <div class="relative group aspect-[3/4] overflow-hidden rounded-lg translate-y-8">
+                    <img alt="Cyclist"
+                        class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                        data-alt="Cyclist riding on mountain road in mist"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuDo9SOB1mxcQxIeAdj4irN3PjXyvqegY6h-OlHEqojfgsR3U3tWHPqKa7fRwUOYytv9Ez3FUTep_4ZLWS-RlC9sS7YPi-K2CTS55F4E6JpipebsiZkkH3FahT0dKREu57MNCK62TKz299fs0F5YLsawSxtQiM8bUhhluhkF5AlRSYMo3_ZaWeXBIwAeq0Jvq73nQ0uOUtUu9W-laVaxqYv0f-MPmQcL9rUN97lV186zLceP5G3r9UNg3-b--yEmTGJpQWIQmXSg_Q">
+                    <div
+                        class="absolute inset-0 bg-primary/80 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                        <span class="text-white font-black text-2xl uppercase tracking-widest italic">Ciclismo</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Impact Section -->
+        <section class="min-h-[80vh] flex flex-col md:flex-row mt-20">
+            <div class="w-full md:w-1/2 relative min-h-[500px]">
+                <img alt="Athlete Portrait" class="absolute inset-0 w-full h-full object-cover"
+                    data-alt="Close up dramatic black and white portrait of athlete"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuB8QHz56ptkMj3keuzZRaby2RA4LmXxyTPWT4tz0txjTgQU_RJNETCiCDUoqc_hTQMB4ROzujRgA27Bb-XWrIJAQcvIclMmcRf4YlaRSUHWRicKtU8oEAccyZ7X_XmeW7s-we-eqEDXy7FEBRDkpnIx74cw7ISk0I5LyDfqAAU8pO1-i90WALLtF8vK9Dq4qfRc5C3WueWnB3ww_HuRSSiweAcxeGM3WMjPFd7bIVJbKhe5VL7p5Jj38DJZ3upN_O4vUcjdkuPKjQ">
+                <div class="absolute inset-0 bg-primary/10 mix-blend-multiply"></div>
+            </div>
+            <div class="w-full md:w-1/2 bg-neutral-dark p-12 md:p-24 flex flex-col justify-center">
+                <h2 class="text-4xl md:text-5xl font-black uppercase tracking-tighter mb-8 leading-[1.1]">Tu
+                    imagen es el activo más valioso de tu carrera.</h2>
+                <div class="space-y-8">
+                    <div class="flex gap-6">
+                        <span class="text-primary font-black text-2xl italic">01</span>
+                        <div>
+                            <h4 class="text-xl font-bold uppercase mb-2">Atracción de Sponsors</h4>
+                            <p class="text-slate-400">Las marcas buscan autoridad. Una imagen de alta calidad
+                                comunica profesionalismo y compromiso, facilitando acuerdos comerciales.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-6">
+                        <span class="text-primary font-black text-2xl italic">02</span>
+                        <div>
+                            <h4 class="text-xl font-bold uppercase mb-2">Crecimiento Digital</h4>
+                            <p class="text-slate-400">Impacto visual inmediato que detiene el scroll. Contenido
+                                premium diseñado para viralizar tu esfuerzo en redes sociales.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-6">
+                        <span class="text-primary font-black text-2xl italic">03</span>
+                        <div>
+                            <h4 class="text-xl font-bold uppercase mb-2">Legado Visual</h4>
+                            <p class="text-slate-400">Documentación de tu trayectoria con calidad editorial.
+                                Fotos que resisten el paso del tiempo.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Services -->
+        <section class="py-24 px-6 lg:px-40 bg-background-dark">
+            <h2 class="text-3xl font-black uppercase tracking-widest mb-16 text-center">Nuestros Servicios</h2>
+            <div class="divide-y divide-white/10 border-t border-b border-white/10">
+                <div class="group py-12 flex flex-col md:flex-row md:items-center justify-between hover:px-8 transition-all duration-500 cursor-pointer"
+                    onclick="window.location.href='servicios.html'">
+                    <h3 class="text-3xl md:text-5xl font-black uppercase group-hover:text-primary transition-colors">
+                        Cobertura de Eventos</h3>
+                    <div class="flex items-center gap-6 mt-4 md:mt-0">
+                        <p class="text-slate-400 text-right max-w-[300px] hidden md:block">Acción pura en
+                            tiempo real para ligas profesionales y torneos internacionales.</p>
+                        <span
+                            class="material-symbols-outlined text-4xl group-hover:translate-x-2 transition-transform">trending_flat</span>
+                    </div>
+                </div>
+                <div class="group py-12 flex flex-col md:flex-row md:items-center justify-between hover:px-8 transition-all duration-500 cursor-pointer"
+                    onclick="window.location.href='servicios.html'">
+                    <h3 class="text-3xl md:text-5xl font-black uppercase group-hover:text-primary transition-colors">
+                        Sesiones Individuales</h3>
+                    <div class="flex items-center gap-6 mt-4 md:mt-0">
+                        <p class="text-slate-400 text-right max-w-[300px] hidden md:block">Book premium para
+                            atletas que buscan renovar su media kit y redes sociales.</p>
+                        <span
+                            class="material-symbols-outlined text-4xl group-hover:translate-x-2 transition-transform">trending_flat</span>
+                    </div>
+                </div>
+                <div class="group py-12 flex flex-col md:flex-row md:items-center justify-between hover:px-8 transition-all duration-500 cursor-pointer"
+                    onclick="window.location.href='servicios.html'">
+                    <h3 class="text-3xl md:text-5xl font-black uppercase group-hover:text-primary transition-colors">
+                        Torneos Completos</h3>
+                    <div class="flex items-center gap-6 mt-4 md:mt-0">
+                        <p class="text-slate-400 text-right max-w-[300px] hidden md:block">Gestión integral de
+                            imagen para organizadores, incluyendo premiaciones y finales.</p>
+                        <span
+                            class="material-symbols-outlined text-4xl group-hover:translate-x-2 transition-transform">trending_flat</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Final CTA -->
+        <section class="relative py-32 px-6 overflow-hidden">
+            <div class="absolute inset-0 bg-neutral-dark z-0"></div>
+            <div class="absolute top-0 right-0 w-1/3 h-full opacity-10 pointer-events-none">
+                <span class="text-[30rem] font-black text-white leading-none select-none">RUN</span>
+            </div>
+            <div class="relative z-10 max-w-4xl mx-auto text-center">
+                <h2 class="text-6xl md:text-8xl font-black uppercase tracking-tighter mb-8 leading-none">Eleva
+                    tu <span class="text-primary italic">leyenda</span></h2>
+                <p class="text-xl text-slate-400 mb-12 font-light">¿Listo para que tu desempeño luzca como el
+                    de un profesional? Hablemos de tu próxima sesión.</p>
+                <button
+                    class="bg-primary hover:bg-red-700 text-white px-12 py-6 rounded-full font-black text-lg uppercase tracking-widest transition-all shadow-2xl shadow-primary/20 flex items-center gap-4 mx-auto group"
+                    onclick="window.location.href='https://wa.me/59171654992?text=Hola%2C%20me%20gustar%C3%ADa%20reservar%20una%20sesi%C3%B3n%20fotogr%C3%A1fica.'">
+                    Contactar vía WhatsApp
+                    <span class="material-symbols-outlined group-hover:scale-125 transition-transform">send</span>
+                </button>
+            </div>
+        </section>
+        <!-- Footer -->
+        <footer class="bg-background-dark border-t border-white/5 py-12 px-6 lg:px-40">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-10">
+                <div class="flex items-center gap-3 cursor-pointer" onclick="window.location.href='index.html'">
+                    <span class="material-symbols-outlined text-primary text-2xl">sports_score</span>
+                    <h2 class="text-lg font-black tracking-tighter uppercase italic">Estudio Deportivo</h2>
+                </div>
+                <div class="flex gap-8">
+                    <a class="text-slate-500 hover:text-white transition-colors" href="#"><span
+                            class="material-symbols-outlined">social_leaderboard</span></a>
+                    <a class="text-slate-500 hover:text-white transition-colors" href="#"><span
+                            class="material-symbols-outlined">photo_camera</span></a>
+                    <a class="text-slate-500 hover:text-white transition-colors" href="#"><span
+                            class="material-symbols-outlined">smart_display</span></a>
+                </div>
+                <p class="text-xs text-slate-600 uppercase tracking-widest">© 2024 ESTUDIO DEPORTIVO BOLIVIA.
+                    ALL RIGHTS RESERVED.</p>
+            </div>
+        </footer>
+        <!-- Floating WhatsApp -->
+        <a class="fixed bottom-24 right-8 z-[100] bg-[#25D366] text-white size-16 rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-transform"
+            href="https://wa.me/59171654992?text=Hola%2C%20me%20gustar%C3%ADa%20reservar%20una%20sesi%C3%B3n%20fotogr%C3%A1fica.">
+            <svg class="size-8 fill-current" viewBox="0 0 24 24">
+                <path
+                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.72.94 3.659 1.437 5.63 1.437h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z">
+                </path>
+            </svg>
+        </a>
+    </div>
+</body>
+
+</html>
