@@ -156,7 +156,7 @@
             </div>
         </section>
         <!-- Value Proposition -->
-        <section class="py-24 px-6 lg:px-40 bg-neutral-dark">
+        <section class="py-24 px-6 lg:px-40 bg-neutral-dark scroll-animate">
             <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
                 <div
                     class="animate-fade-in delay-300 group p-8 border border-white/5 bg-background-dark/40 hover:border-primary/50 transition-all rounded-xl">
@@ -185,7 +185,7 @@
             </div>
         </section>
         <!-- Featured Portfolio -->
-        <section class="py-24 px-6 lg:px-20 bg-background-dark">
+        <section class="py-24 px-6 lg:px-20 bg-background-dark scroll-animate">
             <div class="flex flex-col items-center mb-16 text-center">
                 <h2 class="text-5xl md:text-6xl font-black uppercase tracking-tighter mb-4">Portafolio
                     Destacado</h2>
@@ -235,7 +235,7 @@
             </div>
         </section>
         <!-- Impact Section -->
-        <section class="min-h-[80vh] flex flex-col md:flex-row mt-20">
+        <section class="min-h-[80vh] flex flex-col md:flex-row mt-20 scroll-animate">
             <div class="w-full md:w-1/2 relative min-h-[500px]">
                 <img alt="Athlete Portrait" class="absolute inset-0 w-full h-full object-cover"
                     data-alt="Close up dramatic black and white portrait of athlete"
@@ -274,7 +274,7 @@
             </div>
         </section>
         <!-- Services -->
-        <section class="py-24 px-6 lg:px-40 bg-background-dark">
+        <section class="py-24 px-6 lg:px-40 bg-background-dark scroll-animate">
             <h2 class="text-3xl font-black uppercase tracking-widest mb-16 text-center">Nuestros Servicios</h2>
             <div class="divide-y divide-white/10 border-t border-b border-white/10">
                 <div class="animate-fade-in group py-12 flex flex-col md:flex-row md:items-center justify-between hover:px-8 transition-all duration-500 cursor-pointer"
@@ -313,7 +313,7 @@
             </div>
         </section>
         <!-- Final CTA -->
-        <section class="relative py-32 px-6 overflow-hidden">
+        <section class="relative py-32 px-6 overflow-hidden scroll-animate">
             <div class="absolute inset-0 bg-neutral-dark z-0"></div>
             <div class="absolute top-0 right-0 w-1/3 h-full opacity-10 pointer-events-none">
                 <span class="text-[30rem] font-black text-white leading-none select-none">RUN</span>
@@ -399,6 +399,30 @@
                 </div>
             </div>
         </footer>
+    <script>
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-fade-in');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const scrollElements = document.querySelectorAll('.scroll-animate');
+            scrollElements.forEach(el => {
+                el.style.opacity = '0';
+                observer.observe(el);
+            });
+        });
+    </script>
 </body>
 
 </html>

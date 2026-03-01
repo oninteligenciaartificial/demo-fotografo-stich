@@ -223,7 +223,7 @@
         </section>
         <!-- Final CTA Section -->
         <section
-            class="relative mt-auto p-12 overflow-hidden rounded-xl border border-primary/20 mb-6 mx-4 bg-neutral-dark">
+            class="relative mt-auto p-12 overflow-hidden rounded-xl scroll-animate border border-primary/20 mb-6 mx-4 bg-neutral-dark">
             <div class="absolute inset-0 bg-gradient-to-t from-background-dark via-background-dark/80 to-primary/5">
             </div>
             <div class="relative z-10 flex flex-col items-center text-center">
@@ -296,6 +296,30 @@
                 </div>
             </div>
         </footer>
+    <script>
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-fade-in');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const scrollElements = document.querySelectorAll('.scroll-animate');
+            scrollElements.forEach(el => {
+                el.style.opacity = '0';
+                observer.observe(el);
+            });
+        });
+    </script>
 </body>
 
 </html>

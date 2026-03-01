@@ -132,7 +132,7 @@
                     </div>
                 </div>
             </section>
-            <section class="px-6 py-12 bg-background-dark">
+            <section class="px-6 py-12 bg-background-dark scroll-animate">
                 <h2 class="text-slate-100 text-4xl font-extrabold leading-tight tracking-tighter mb-6 uppercase">
                     Capturing the <span class="text-primary">unseen</span> power
                 </h2>
@@ -143,7 +143,7 @@
                 </p>
             </section>
             <section
-                class="flex overflow-x-auto gap-8 px-6 py-10 bg-neutral-dark border-y border-primary/10 no-scrollbar">
+                class="flex overflow-x-auto gap-8 px-6 py-10 bg-neutral-dark scroll-animate border-y border-primary/10 no-scrollbar">
                 <div class="flex-shrink-0">
                     <div class="text-5xl font-black text-outline flex items-center">10<span
                             class="text-primary text-3xl ml-1">+</span></div>
@@ -160,7 +160,7 @@
                     <p class="text-[10px] uppercase tracking-widest text-slate-400 font-bold">Torneos Int.</p>
                 </div>
             </section>
-            <section class="px-6 py-12 space-y-6">
+            <section class="px-6 py-12 space-y-6 scroll-animate">
                 <h3 class="text-primary text-xs font-bold uppercase tracking-[0.3em]">Trayectoria</h3>
                 <div class="grid grid-cols-1 gap-6 text-slate-300 leading-relaxed font-light">
                     <p>Desde los campos locales de tierra en el Altiplano hasta los estadios más emblemáticos del
@@ -172,7 +172,7 @@
                 </div>
             </section>
             <section
-                class="mx-6 p-6 rounded-xl bg-gradient-to-br from-neutral-dark to-background-dark border border-white/5">
+                class="mx-6 p-6 rounded-xl scroll-animate bg-gradient-to-br from-neutral-dark to-background-dark border border-white/5">
                 <div class="flex items-center gap-3 mb-4">
                     <span class="material-symbols-outlined text-primary">sensors</span>
                     <h4 class="text-slate-100 font-bold text-sm uppercase tracking-widest">Tecnología &amp; Workflow
@@ -192,7 +192,7 @@
                         Delivery</span>
                 </div>
             </section>
-            <section class="px-6 py-16 text-center space-y-8">
+            <section class="px-6 py-16 text-center space-y-8 scroll-animate">
                 <div class="space-y-2">
                     <p class="text-slate-400 uppercase tracking-[0.2em] text-[10px] font-bold">Comienza el proyecto</p>
                     <h2 class="text-3xl font-extrabold italic uppercase">Tu visión, mi lente.</h2>
@@ -280,6 +280,30 @@
                 </div>
             </div>
         </footer>
+    <script>
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-fade-in');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const scrollElements = document.querySelectorAll('.scroll-animate');
+            scrollElements.forEach(el => {
+                el.style.opacity = '0';
+                observer.observe(el);
+            });
+        });
+    </script>
 </body>
 
 </html>
