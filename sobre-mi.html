@@ -19,6 +19,21 @@
             darkMode: "class",
             theme: {
                 extend: {
+                    fontSize: {
+                        'xs': '0.7rem',
+                        'sm': '0.8rem',
+                        'base': '0.95rem',
+                        'lg': '1.05rem',
+                        'xl': '1.15rem',
+                        '2xl': '1.35rem',
+                        '3xl': '1.65rem',
+                        '4xl': '2rem',
+                        '5xl': '2.5rem',
+                        '6xl': '3rem',
+                        '7xl': '4rem',
+                        '8xl': '5.5rem',
+                        '9xl': '7rem',
+                    },
                     colors: {
                         "primary": "#d41132",
                         "background-light": "#f8f6f6",
@@ -53,18 +68,26 @@
 
 <body class="font-display antialiased overflow-x-hidden">
     <div class="relative flex min-h-screen w-full flex-col bg-background-light dark:bg-background-dark">
-        <header
-            class="fixed top-0 w-full z-50 flex items-center bg-background-dark/80 backdrop-blur-md p-4 justify-between border-b border-primary/10">
-            <div class="text-slate-100 flex size-10 shrink-0 items-center justify-center rounded-full hover:bg-primary/20 transition-colors cursor-pointer"
-                onclick="window.location.href='index.html'">
-                <span class="material-symbols-outlined">arrow_back</span>
-            </div>
-            <h2 class="text-slate-100 text-sm font-bold uppercase tracking-widest flex-1 text-center">Perfil Profesional
-            </h2>
-            <div class="flex size-10 items-center justify-end">
-                <span class="material-symbols-outlined text-slate-100">share</span>
-            </div>
-        </header>
+            <!-- Header / Nav -->
+    <header class="fixed top-0 z-[100] w-full border-b border-primary/20 bg-background-dark/95 backdrop-blur-xl px-4 lg:px-12 py-3 flex flex-wrap items-center justify-between gap-y-3 shadow-2xl transition-all">
+        <div class="flex items-center gap-2 cursor-pointer" onclick="window.location.href='index.html'">
+            <span class="material-symbols-outlined text-primary text-2xl lg:text-3xl">sports_score</span>
+            <h2 class="text-sm lg:text-lg font-black tracking-tighter uppercase italic">Estudio Deportivo</h2>
+        </div>
+        
+        <nav class="w-full md:w-auto order-last md:order-none flex items-center justify-center gap-4 md:gap-8 overflow-x-auto pb-1 md:pb-0 no-scrollbar">
+            <a class="text-[10px] md:text-xs font-semibold tracking-widest hover:text-primary transition-colors uppercase whitespace-nowrap" href="index.html">Inicio</a>
+            <a class="text-[10px] md:text-xs font-semibold tracking-widest hover:text-primary transition-colors uppercase whitespace-nowrap" href="portafolio.html">Portafolio</a>
+            <a class="text-[10px] md:text-xs font-semibold tracking-widest hover:text-primary transition-colors uppercase whitespace-nowrap" href="servicios.html">Servicios</a>
+            <a class="text-[10px] md:text-xs font-semibold tracking-widest hover:text-primary transition-colors uppercase whitespace-nowrap" href="sobre-mi.html">Sobre mí</a>
+        </nav>
+
+        <div class="flex items-center gap-3">
+            <button class="bg-primary hover:bg-red-700 text-white px-4 md:px-6 py-2 rounded font-black text-[10px] md:text-xs uppercase tracking-widest transition-all shadow-lg hover:shadow-primary/50" onclick="window.location.href='https://wa.me/59171654992?text=Hola%2C%20me%20gustar%C3%ADa%20reservar%20una%20sesi%C3%B3n%20fotogr%C3%A1fica.'">
+                Reservar Sesión
+            </button>
+        </div>
+    </header>
         <main class="flex-1 pb-24">
             <section class="relative flex flex-col md:flex-row @container">
                 <div class="relative h-[60vh] w-full overflow-hidden">
