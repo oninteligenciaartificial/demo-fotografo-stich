@@ -1,14 +1,12 @@
 ﻿<!DOCTYPE html>
-<html class="dark">
+<html class="dark" lang="es">
 
 <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Elite Sports Photography | Inicio</title>
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;600;700;800;900&amp;display=swap"
-        rel="stylesheet">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
         rel="stylesheet">
     <link
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
@@ -53,16 +51,12 @@
             font-family: 'Lexend', sans-serif;
         }
 
-        .masonry-item:nth-child(even) {
-            margin-top: 2rem;
-        }
-    </style>
-    <style>
         @keyframes fadeInUp {
             from {
                 opacity: 0;
                 transform: translateY(20px);
             }
+
             to {
                 opacity: 1;
                 transform: translateY(0);
@@ -74,13 +68,24 @@
             opacity: 0;
         }
 
-        .delay-100 { animation-delay: 0.1s; }
-        .delay-200 { animation-delay: 0.2s; }
-        .delay-300 { animation-delay: 0.3s; }
-        .delay-500 { animation-delay: 0.5s; }
-        
-        /* Smooth transitions for all links and buttons */
-        a, button {
+        .delay-100 {
+            animation-delay: 0.1s;
+        }
+
+        .delay-200 {
+            animation-delay: 0.2s;
+        }
+
+        .delay-300 {
+            animation-delay: 0.3s;
+        }
+
+        .delay-500 {
+            animation-delay: 0.5s;
+        }
+
+        a,
+        button {
             transition: all 0.3s ease;
         }
     </style>
@@ -90,14 +95,12 @@
     class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 antialiased overflow-x-hidden pb-0">
     <div class="relative flex min-h-screen flex-col">
         <!-- Header / Nav -->
-        <!-- Header / Nav -->
         <header
             class="fixed top-0 z-[100] w-full border-b border-primary/20 bg-background-dark/95 backdrop-blur-xl px-4 lg:px-12 py-3 flex flex-wrap items-center justify-between gap-y-3 shadow-2xl transition-all">
             <div class="flex items-center gap-2 cursor-pointer" onclick="window.location.href='index.html'">
                 <span class="material-symbols-outlined text-primary text-2xl lg:text-3xl">sports_score</span>
                 <h2 class="text-sm lg:text-lg font-black tracking-tighter uppercase italic">Estudio Deportivo</h2>
             </div>
-
             <nav
                 class="w-full md:w-auto order-last md:order-none flex items-center justify-center gap-4 md:gap-8 overflow-x-auto pb-1 md:pb-0 no-scrollbar">
                 <a class="text-[10px] md:text-xs font-semibold tracking-widest hover:text-primary transition-colors uppercase whitespace-nowrap"
@@ -109,7 +112,6 @@
                 <a class="text-[10px] md:text-xs font-semibold tracking-widest hover:text-primary transition-colors uppercase whitespace-nowrap"
                     href="sobre-mi.html">Sobre mí</a>
             </nav>
-
             <div class="flex items-center gap-3">
                 <button
                     class="bg-primary hover:bg-red-700 text-white px-4 md:px-6 py-2 rounded font-black text-[10px] md:text-xs uppercase tracking-widest transition-all shadow-lg hover:shadow-primary/50"
@@ -118,6 +120,7 @@
                 </button>
             </div>
         </header>
+
         <!-- Hero Section -->
         <section
             class="relative h-screen w-full flex items-center justify-start overflow-hidden pt-[110px] md:pt-[90px]">
@@ -125,18 +128,20 @@
                 <div
                     class="absolute inset-0 bg-gradient-to-r from-background-dark via-background-dark/60 to-transparent z-10">
                 </div>
-                <img alt="Soccer player mid-strike action" class="w-full h-full object-cover"
-                    data-alt="Professional soccer player kicking ball mid-action"
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCFhN7A7eUqvrPeOqR9ywRuoERdAaU1TMqxVZjarIPfQkbXiZBjmkCyeltKdtEkW8qiwOmMx9nr3Llo5FyBHEDF5B05zlKPOaz-hAy-IVHfsWN0tbos78X3OIX_Y8yQdRdKGyol1gvNzb1Gt6XIBwGsK5XcenpdGWSqqky_tC3M3onkqQvT2mpeh8yR4uBD96IwPERBltN-Tn4yEXm8GcHGkj1C_DdolNkRKYyjqvmnXuNza6VzYEuymeUT92emt3YE98pmMft8Cg">
+                <img alt="Boxeador boliviano en acción" class="w-full h-full object-cover"
+                    src="assets/img/boxeador_hero.png">
             </div>
             <div class="relative z-20 px-6 lg:px-40 max-w-5xl">
                 <span
                     class="inline-block bg-primary/20 text-primary border border-primary/30 px-3 py-1 text-[10px] font-bold tracking-[0.3em] uppercase mb-6">
-                    Premium Sports Photography • Bolivia
+                    Fotografía Deportiva Premium • Bolivia
                 </span>
-                <h1 class="animate-fade-in text-6xl md:text-8xl font-black leading-[0.9] tracking-tighter uppercase mb-8">
-                    Capturamos la <br><span class="text-primary italic">intensidad</span>&nbsp;</h1>
-                <p class="animate-fade-in delay-200 text-lg md:text-xl text-slate-400 max-w-2xl mb-10 leading-relaxed font-light">
+                <h1
+                    class="animate-fade-in text-6xl md:text-8xl font-black leading-[0.9] tracking-tighter uppercase mb-8">
+                    Capturamos la <br><span class="text-primary italic">intensidad</span>
+                </h1>
+                <p
+                    class="animate-fade-in delay-200 text-lg md:text-xl text-slate-400 max-w-2xl mb-10 leading-relaxed font-light">
                     Elevamos la imagen de atletas de alto rendimiento y marcas deportivas a través de una narrativa
                     visual agresiva, técnica y cinematográfica.
                 </p>
@@ -144,268 +149,159 @@
                     <button
                         class="bg-primary hover:bg-red-700 text-white px-10 py-5 rounded font-black text-sm uppercase tracking-widest flex items-center gap-3 group transition-all"
                         onclick="window.location.href='https://wa.me/59171654992?text=Hola%2C%20me%20gustar%C3%ADa%20reservar%20una%20sesi%C3%B3n%20fotogr%C3%A1fica.'">
-                        Reservar Sesión
-                        <span
+                        Reservar Sesión <span
                             class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
                     </button>
                     <a href="portafolio.html"
                         class="border border-white/20 hover:bg-white/10 text-white px-10 py-5 rounded font-black text-sm uppercase tracking-widest transition-all">Ver
-                        Portafolio
-                    </a>
+                        Portafolio</a>
                 </div>
             </div>
         </section>
+
         <!-- Value Proposition -->
         <section class="py-24 px-6 lg:px-40 bg-neutral-dark scroll-animate">
             <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
                 <div
-                    class="animate-fade-in delay-300 group p-8 border border-white/5 bg-background-dark/40 hover:border-primary/50 transition-all rounded-xl">
+                    class="animate-fade-in delay-300 group p-8 border border-white/5 bg-background-dark/40 hover:border-primary/50 transition-all rounded-xl text-center md:text-left">
                     <span
                         class="material-symbols-outlined text-primary text-5xl mb-6 block group-hover:scale-110 transition-transform">history_edu</span>
-                    <h3 class="text-2xl font-bold mb-4 uppercase tracking-tight">Narrativa Visual</h3>
-                    <p class="text-slate-400 leading-relaxed">No solo tomamos fotos. Construimos la historia de
+                    <h3 class="text-xl font-bold mb-4 uppercase tracking-tight text-white">Narrativa Visual</h3>
+                    <p class="text-slate-400 leading-relaxed text-sm">No solo tomamos fotos. Construimos la historia de
                         tu disciplina, el sudor, la preparación y la gloria final.</p>
                 </div>
                 <div
-                    class="animate-fade-in delay-300 group p-8 border border-white/5 bg-background-dark/40 hover:border-primary/50 transition-all rounded-xl">
+                    class="animate-fade-in delay-300 group p-8 border border-white/5 bg-background-dark/40 hover:border-primary/50 transition-all rounded-xl text-center md:text-left">
                     <span
                         class="material-symbols-outlined text-primary text-5xl mb-6 block group-hover:scale-110 transition-transform">timer_10_alt_1</span>
-                    <h3 class="text-2xl font-bold mb-4 uppercase tracking-tight">Momento Decisivo</h3>
-                    <p class="text-slate-400 leading-relaxed">Capturamos la milésima de segundo donde el
+                    <h3 class="text-xl font-bold mb-4 uppercase tracking-tight text-white">Momento Decisivo</h3>
+                    <p class="text-slate-400 leading-relaxed text-sm">Capturamos la milésima de segundo donde el
                         esfuerzo se convierte en leyenda. Precisión técnica absoluta.</p>
                 </div>
                 <div
-                    class="animate-fade-in delay-300 group p-8 border border-white/5 bg-background-dark/40 hover:border-primary/50 transition-all rounded-xl">
+                    class="animate-fade-in delay-300 group p-8 border border-white/5 bg-background-dark/40 hover:border-primary/50 transition-all rounded-xl text-center md:text-left">
                     <span
                         class="material-symbols-outlined text-primary text-5xl mb-6 block group-hover:scale-110 transition-transform">trophy</span>
-                    <h3 class="text-2xl font-bold mb-4 uppercase tracking-tight">Elevación de Marca</h3>
-                    <p class="text-slate-400 leading-relaxed">Transformamos tu perfil deportivo para atraer
+                    <h3 class="text-xl font-bold mb-4 uppercase tracking-tight text-white">Elevación de Marca</h3>
+                    <p class="text-slate-400 leading-relaxed text-sm">Transformamos tu perfil deportivo para atraer
                         patrocinadores de élite y consolidar tu presencia digital.</p>
                 </div>
             </div>
         </section>
+
         <!-- Featured Portfolio -->
         <section class="py-24 px-6 lg:px-20 bg-background-dark scroll-animate">
             <div class="flex flex-col items-center mb-16 text-center">
-                <h2 class="text-5xl md:text-6xl font-black uppercase tracking-tighter mb-4">Portafolio
-                    Destacado</h2>
+                <h2 class="text-4xl md:text-6xl font-black uppercase tracking-tighter mb-4">Portafolio Destacado</h2>
                 <div class="h-1.5 w-24 bg-primary"></div>
             </div>
             <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-                <div class="animate-fade-in delay-500 relative group aspect-[3/4] overflow-hidden rounded-lg">
-                    <img alt="Tennis player"
-                        class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
-                        data-alt="Dynamic shot of tennis player serving ball"
-                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuAPu5mLJ5gNRueGvjX65Y4Z2x9bZi8eMzbtLyTnqrQ_VqECe0u9iBUJxtffxVRYPVFc7vB7Pw1nrKIO171fwY2jBO2miEei8-ugfTG54W3GZt2-1YCxi6FhFobuUbUpF71MsDwJ1i57COSY9TaiwVKccljGuuazBqOHGb9lREJeSwiDO0sT2Vts1pY5Z4zU_c7XsT3fD5zHg8SZvztrsTTIkRTDaeGYmsWOGeeMWiXZaXmDH0z8cSvjteW7zH5eYcB3E9HS4EDN0w">
-                    <div
-                        class="absolute inset-0 bg-primary/80 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-                        <span class="text-white font-black text-2xl uppercase tracking-widest italic">Tenis</span>
-                    </div>
-                </div>
-                <div class="animate-fade-in delay-500 relative group aspect-[3/4] overflow-hidden rounded-lg translate-y-8">
-                    <img alt="Racing car"
-                        class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
-                        data-alt="High speed racing car on track at sunset"
-                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuAmkO5dgT-d1I-phl1oqx-V8BspTXrlzs6Qzc2gROu-XbiZXwGpOPkE09oB0zp2nbnOYs5iiylR_8-m2i77kKXXnkuG2YEgDSNTK6THhNgt4_cflPre6Ije1KAKHYkfTVkDYsF0RFmxd2ujxjDfW1a9IgW1RXW0q4VXlbpqnOfYqKio9d9eLqsb_RHoZz7n-sSUoylwFDW6U1B_RQ9dpG_CzYtvzAxz-Mna3-45QXcucmTUjpPhIebTKPxxjHMBofkIxfhIRsEbMA">
-                    <div
-                        class="absolute inset-0 bg-primary/80 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-                        <span class="text-white font-black text-2xl uppercase tracking-widest italic">Motorsport</span>
-                    </div>
-                </div>
-                <div class="animate-fade-in delay-500 relative group aspect-[3/4] overflow-hidden rounded-lg">
-                    <img alt="Basketball player"
-                        class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
-                        data-alt="Basketball player dunking in outdoor court"
-                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuDmacekGnVk9lEAEdZfApDAQ4m9A3YNaqku7t65MWozydQbRKMIyWsKktR7JAtSwAWgyr5yUgX7QzX43q4_9thOAyJZV4iM9_1KQsM-yhFdcHFqgZXaG2YDfsWD0JcNr9EnqaGI7fvkmelHTrOVG9GrncycWs_qiXfkhKYFQYFJJgc-pLRO9fZn3BnneO_boffm1uryTwOHWNX0jdiCFe7etqLWOT15m1Pj4TyMzCxvv-yNOROwM_r9hgUI6SW3i1JwbU3gFhMzpg">
-                    <div
-                        class="absolute inset-0 bg-primary/80 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-                        <span class="text-white font-black text-2xl uppercase tracking-widest italic">Básquetbol</span>
-                    </div>
-                </div>
-                <div class="animate-fade-in delay-500 relative group aspect-[3/4] overflow-hidden rounded-lg translate-y-8">
-                    <img alt="Cyclist"
-                        class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
-                        data-alt="Cyclist riding on mountain road in mist"
-                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuDo9SOB1mxcQxIeAdj4irN3PjXyvqegY6h-OlHEqojfgsR3U3tWHPqKa7fRwUOYytv9Ez3FUTep_4ZLWS-RlC9sS7YPi-K2CTS55F4E6JpipebsiZkkH3FahT0dKREu57MNCK62TKz299fs0F5YLsawSxtQiM8bUhhluhkF5AlRSYMo3_ZaWeXBIwAeq0Jvq73nQ0uOUtUu9W-laVaxqYv0f-MPmQcL9rUN97lV186zLceP5G3r9UNg3-b--yEmTGJpQWIQmXSg_Q">
-                    <div
-                        class="absolute inset-0 bg-primary/80 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-                        <span class="text-white font-black text-2xl uppercase tracking-widest italic">Ciclismo</span>
-                    </div>
-                </div>
+                <img src="assets/img/tenis_1.png"
+                    class="animate-fade-in delay-500 relative group aspect-[3/4] overflow-hidden rounded-lg object-cover"
+                    alt="Tenis">
+                <img src="assets/img/futbol_1.png"
+                    class="animate-fade-in delay-500 relative group aspect-[3/4] overflow-hidden rounded-lg translate-y-8 object-cover"
+                    alt="Fútbol">
+                <img src="assets/img/basquetbol_1.png"
+                    class="animate-fade-in delay-500 relative group aspect-[3/4] overflow-hidden rounded-lg object-cover"
+                    alt="Básquet">
+                <img src="assets/img/ciclismo_1.png"
+                    class="animate-fade-in delay-500 relative group aspect-[3/4] overflow-hidden rounded-lg translate-y-8 object-cover"
+                    alt="Ciclismo">
             </div>
         </section>
+
         <!-- Impact Section -->
         <section class="min-h-[80vh] flex flex-col md:flex-row mt-20 scroll-animate">
             <div class="w-full md:w-1/2 relative min-h-[500px]">
-                <img alt="Athlete Portrait" class="absolute inset-0 w-full h-full object-cover"
-                    data-alt="Close up dramatic black and white portrait of athlete"
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuB8QHz56ptkMj3keuzZRaby2RA4LmXxyTPWT4tz0txjTgQU_RJNETCiCDUoqc_hTQMB4ROzujRgA27Bb-XWrIJAQcvIclMmcRf4YlaRSUHWRicKtU8oEAccyZ7X_XmeW7s-we-eqEDXy7FEBRDkpnIx74cw7ISk0I5LyDfqAAU8pO1-i90WALLtF8vK9Dq4qfRc5C3WueWnB3ww_HuRSSiweAcxeGM3WMjPFd7bIVJbKhe5VL7p5Jj38DJZ3upN_O4vUcjdkuPKjQ">
+                <img alt="Retrato de Atleta" class="absolute inset-0 w-full h-full object-cover grayscale"
+                    src="assets/img/atletismo_1.png">
                 <div class="absolute inset-0 bg-primary/10 mix-blend-multiply"></div>
             </div>
             <div class="w-full md:w-1/2 bg-neutral-dark p-12 md:p-24 flex flex-col justify-center">
-                <h2 class="animate-fade-in text-4xl md:text-5xl font-black uppercase tracking-tighter mb-8 leading-[1.1]">Tu
-                    imagen es el activo más valioso de tu carrera.</h2>
+                <h2
+                    class="animate-fade-in text-4xl md:text-5xl font-black uppercase tracking-tighter mb-8 leading-[1.1]">
+                    Tu imagen es el activo más valioso de tu carrera.</h2>
                 <div class="space-y-8">
                     <div class="flex gap-6">
                         <span class="text-primary font-black text-2xl italic">01</span>
                         <div>
-                            <h4 class="text-xl font-bold uppercase mb-2">Atracción de Sponsors</h4>
-                            <p class="text-slate-400">Las marcas buscan autoridad. Una imagen de alta calidad
-                                comunica profesionalismo y compromiso, facilitando acuerdos comerciales.</p>
+                            <h4 class="text-xl font-bold uppercase mb-2">Atracción de Patrocinio</h4>
+                            <p class="text-slate-400">Las marcas buscan autoridad. Una imagen de alta calidad comunica
+                                profesionalismo y compromiso.</p>
                         </div>
                     </div>
                     <div class="flex gap-6">
                         <span class="text-primary font-black text-2xl italic">02</span>
                         <div>
                             <h4 class="text-xl font-bold uppercase mb-2">Crecimiento Digital</h4>
-                            <p class="text-slate-400">Impacto visual inmediato que detiene el scroll. Contenido
-                                premium diseñado para viralizar tu esfuerzo en redes sociales.</p>
-                        </div>
-                    </div>
-                    <div class="flex gap-6">
-                        <span class="text-primary font-black text-2xl italic">03</span>
-                        <div>
-                            <h4 class="text-xl font-bold uppercase mb-2">Legado Visual</h4>
-                            <p class="text-slate-400">Documentación de tu trayectoria con calidad editorial.
-                                Fotos que resisten el paso del tiempo.</p>
+                            <p class="text-slate-400">Impacto visual inmediato que detiene el scroll. Contenido premium
+                                para tus redes sociales.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- Services -->
-        <section class="py-24 px-6 lg:px-40 bg-background-dark scroll-animate">
-            <h2 class="text-3xl font-black uppercase tracking-widest mb-16 text-center">Nuestros Servicios</h2>
-            <div class="divide-y divide-white/10 border-t border-b border-white/10">
-                <div class="animate-fade-in group py-12 flex flex-col md:flex-row md:items-center justify-between hover:px-8 transition-all duration-500 cursor-pointer"
-                    onclick="window.location.href='https://wa.me/59171654992?text=Hola%2C%20me%20gustar%C3%ADa%20reservar%20una%20sesi%C3%B3n%20fotogr%C3%A1fica.%20Me%20interesa%20el%20servicio%20cobertura%20de%20eventos.'">
-                    <h3 class="text-3xl md:text-5xl font-black uppercase group-hover:text-primary transition-colors">
-                        Cobertura de Eventos</h3>
-                    <div class="flex items-center gap-6 mt-4 md:mt-0">
-                        <p class="text-slate-400 text-right max-w-[300px] hidden md:block">Acción pura en
-                            tiempo real para ligas profesionales y torneos internacionales.</p>
-                        <span
-                            class="material-symbols-outlined text-4xl group-hover:translate-x-2 transition-transform">trending_flat</span>
-                    </div>
-                </div>
-                <div class="animate-fade-in group py-12 flex flex-col md:flex-row md:items-center justify-between hover:px-8 transition-all duration-500 cursor-pointer"
-                    onclick="window.location.href='https://wa.me/59171654992?text=Hola%2C%20me%20gustar%C3%ADa%20reservar%20una%20sesi%C3%B3n%20fotogr%C3%A1fica.%20Me%20interesa%20el%20servicio%20sesiones%20individuales.'">
-                    <h3 class="text-3xl md:text-5xl font-black uppercase group-hover:text-primary transition-colors">
-                        Sesiones Individuales</h3>
-                    <div class="flex items-center gap-6 mt-4 md:mt-0">
-                        <p class="text-slate-400 text-right max-w-[300px] hidden md:block">Book premium para
-                            atletas que buscan renovar su media kit y redes sociales.</p>
-                        <span
-                            class="material-symbols-outlined text-4xl group-hover:translate-x-2 transition-transform">trending_flat</span>
-                    </div>
-                </div>
-                <div class="animate-fade-in group py-12 flex flex-col md:flex-row md:items-center justify-between hover:px-8 transition-all duration-500 cursor-pointer"
-                    onclick="window.location.href='https://wa.me/59171654992?text=Hola%2C%20me%20gustar%C3%ADa%20reservar%20una%20sesi%C3%B3n%20fotogr%C3%A1fica.%20Me%20interesa%20el%20servicio%20torneos%20completos.'">
-                    <h3 class="text-3xl md:text-5xl font-black uppercase group-hover:text-primary transition-colors">
-                        Torneos Completos</h3>
-                    <div class="flex items-center gap-6 mt-4 md:mt-0">
-                        <p class="text-slate-400 text-right max-w-[300px] hidden md:block">Gestión integral de
-                            imagen para organizadores, incluyendo premiaciones y finales.</p>
-                        <span
-                            class="material-symbols-outlined text-4xl group-hover:translate-x-2 transition-transform">trending_flat</span>
-                    </div>
-                </div>
-            </div>
-        </section>
+
         <!-- Final CTA -->
-        <section class="relative py-32 px-6 overflow-hidden scroll-animate">
-            <div class="absolute inset-0 bg-neutral-dark z-0"></div>
-            <div class="absolute top-0 right-0 w-1/3 h-full opacity-10 pointer-events-none">
-                <span class="text-[30rem] font-black text-white leading-none select-none">RUN</span>
-            </div>
-            <div class="relative z-10 max-w-4xl mx-auto text-center">
-                <h2 class="text-6xl md:text-8xl font-black uppercase tracking-tighter mb-8 leading-none">Eleva
-                    tu <span class="text-primary italic">leyenda</span></h2>
-                <p class="text-xl text-slate-400 mb-12 font-light">¿Listo para que tu desempeño luzca como el
-                    de un profesional? Hablemos de tu próxima sesión.</p>
+        <section class="relative py-32 px-6 overflow-hidden scroll-animate bg-background-dark text-center">
+            <div class="relative z-10 max-w-4xl mx-auto">
+                <h2 class="text-6xl md:text-8xl font-black uppercase tracking-tighter mb-8 leading-none">Eleva tu <span
+                        class="text-primary italic">leyenda</span></h2>
+                <p class="text-xl text-slate-400 mb-12 font-light italic">¿Listo para que tu desempeño luzca como el de
+                    un profesional?</p>
                 <button
                     class="bg-primary hover:bg-red-700 text-white px-12 py-6 rounded-full font-black text-lg uppercase tracking-widest transition-all shadow-2xl shadow-primary/20 flex items-center gap-4 mx-auto group"
                     onclick="window.location.href='https://wa.me/59171654992?text=Hola%2C%20me%20gustar%C3%ADa%20reservar%20una%20sesi%C3%B3n%20fotogr%C3%A1fica.'">
-                    Contactar vía WhatsApp
-                    <span class="material-symbols-outlined group-hover:scale-125 transition-transform">send</span>
+                    Contactar vía WhatsApp <span
+                        class="material-symbols-outlined group-hover:scale-125 transition-transform">send</span>
                 </button>
             </div>
         </section>
-        
-        <!-- Floating WhatsApp -->
-        <a class="fixed bottom-24 right-8 z-[100] bg-[#25D366] text-white size-16 rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-transform"
-            href="https://wa.me/59171654992?text=Hola%2C%20me%20gustar%C3%ADa%20reservar%20una%20sesi%C3%B3n%20fotogr%C3%A1fica.">
-            <svg class="size-8 fill-current" viewBox="0 0 24 24">
-                <path
-                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.72.94 3.659 1.437 5.63 1.437h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z">
-                </path>
-            </svg>
-        </a>
-    </div>
+
         <!-- Footer -->
         <footer class="bg-background-dark border-t border-white/5 pt-16 pb-12 px-6 lg:px-40">
-            <div class="max-w-7xl mx-auto flex flex-col gap-12">
-                <!-- Top Footer -->
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-12 items-start text-center md:text-left">
-                    <!-- Brand Section -->
+            <div class="max-w-7xl mx-auto flex flex-col gap-12 text-center md:text-left">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
                     <div class="flex flex-col items-center md:items-start gap-4">
                         <div class="flex items-center gap-3 cursor-pointer" onclick="window.location.href='index.html'">
                             <span class="material-symbols-outlined text-primary text-3xl">sports_score</span>
-                            <h2 class="text-xl font-black tracking-tighter uppercase italic">Estudio Deportivo</h2>
+                            <h2 class="text-xl font-black tracking-tighter uppercase italic text-white md:text-left">
+                                Estudio Deportivo</h2>
                         </div>
-                        <p class="text-slate-400 text-sm max-w-xs leading-relaxed">
-                            Capturando la intensidad del deporte boliviano con calidad editorial y potencia visual de élite.
-                        </p>
+                        <p class="text-slate-400 text-sm max-w-xs leading-relaxed">Capturando la intensidad del deporte
+                            boliviano con calidad editorial y potencia visual de élite.</p>
                     </div>
-
-                    <!-- Fast Links -->
                     <div class="flex flex-col items-center md:items-start gap-4">
                         <h4 class="text-[10px] font-black uppercase tracking-[0.2em] text-white/40">Explorar</h4>
                         <div class="flex flex-wrap justify-center md:justify-start gap-x-6 gap-y-3">
-                            <a href="index.html" class="text-xs font-bold text-slate-500 hover:text-primary transition-colors uppercase tracking-widest">Inicio</a>
-                            <a href="portafolio.html" class="text-xs font-bold text-slate-500 hover:text-primary transition-colors uppercase tracking-widest">Portafolio</a>
-                            <a href="servicios.html" class="text-xs font-bold text-slate-500 hover:text-primary transition-colors uppercase tracking-widest">Servicios</a>
-                            <a href="sobre-mi.html" class="text-xs font-bold text-slate-500 hover:text-primary transition-colors uppercase tracking-widest">Sobre Mí</a>
-                        </div>
-                    </div>
-
-                    <!-- Social Presence -->
-                    <div class="flex flex-col items-center md:items-start gap-4">
-                        <h4 class="text-[10px] font-black uppercase tracking-[0.2em] text-white/40">Conectar</h4>
-                        <div class="flex justify-center md:justify-start gap-4">
-                            <a href="https://instagram.com" target="_blank" class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center text-slate-400 hover:border-primary hover:text-primary transition-all group">
-                                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.332 3.608 1.308.975.975 1.245 2.242 1.308 3.608.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.063 1.366-.333 2.633-1.308 3.608-.975.975-2.242 1.245-3.608 1.308-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.366-.063-2.633-.333-3.608-1.308-.975-.975-1.245-2.242-1.308-3.608-.058-1.266-.07-1.646-.07-4.85s.012-3.584.07-4.85c.062-1.366.332-2.633 1.308-3.608.975-.975 2.242-1.245 3.608-1.308 1.266-.058 1.646-.07 4.85-.07zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
-                            </a>
-                            <a href="https://facebook.com" target="_blank" class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center text-slate-400 hover:border-primary hover:text-primary transition-all group">
-                                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z"/></svg>
-                            </a>
-                            <a href="https://tiktok.com" target="_blank" class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center text-slate-400 hover:border-primary hover:text-primary transition-all group">
-                                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12.525.02c1.31.036 2.512.352 3.6.952V6.22c-1.71-.274-3.31-.454-4.87-.541v9.564c0 2.612-1.458 4.133-3.085 4.133-1.613 0-3.15-.974-3.15-3.324 0-2.31 1.337-3.663 3.091-3.663.777 0 1.406.271 2.015.689v-4.69c-1.026-.563-2.028-.881-3.31-.881C3.99 8.527 2 10.453 2 13.508c0 3.018 2.035 5.274 5.091 5.274 3.012 0 4.959-2.22 4.959-5.125V0l.475.02z"/></svg>
-                            </a>
+                            <a href="index.html" class="text-xs font-bold text-slate-500 hover:text-primary">Inicio</a>
+                            <a href="portafolio.html"
+                                class="text-xs font-bold text-slate-500 hover:text-primary">Portafolio</a>
+                            <a href="servicios.html"
+                                class="text-xs font-bold text-slate-500 hover:text-primary">Servicios</a>
                         </div>
                     </div>
                 </div>
-
-                <!-- Bottom Footer -->
-                <div class="border-t border-white/5 pt-8 flex flex-col md:flex-row justify-between items-center gap-8 text-center md:text-left">
-                    <div class="flex flex-wrap justify-center md:justify-start gap-6">
-                        <a href="#" class="text-[10px] text-slate-600 hover:text-white transition-colors uppercase tracking-[0.2em] font-bold">Privacidad</a>
-                        <a href="#" class="text-[10px] text-slate-600 hover:text-white transition-colors uppercase tracking-[0.2em] font-bold">Términos</a>
-                        <a href="#" class="text-[10px] text-slate-600 hover:text-white transition-colors uppercase tracking-[0.2em] font-bold">Cookies</a>
-                    </div>
-                    <p class="text-[10px] text-slate-600 uppercase tracking-[0.2em] font-bold">
-                        © 2026 ESTUDIO DEPORTIVO BOLIVIA
-                    </p>
+                <div class="border-t border-white/5 pt-8 flex flex-col md:flex-row justify-between items-center gap-8">
+                    <p class="text-[10px] text-slate-600 uppercase tracking-[0.2em] font-bold">© 2026 ESTUDIO DEPORTIVO
+                        BOLIVIA</p>
                 </div>
             </div>
         </footer>
-    <script>
-        const observerOptions = {
-            root: null,
-            rootMargin: '0px',
-            threshold: 0.1
-        };
+    </div>
 
+    <!-- Floating WhatsApp -->
+    <a class="fixed bottom-24 right-8 z-[100] bg-[#25D366] text-white size-16 rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-transform"
+        href="https://wa.me/59171654992?text=Hola%2C%20me%20gustar%C3%ADa%20reservar%20una%20sesi%C3%B3n%20fotogr%C3%A1fica.">
+        <svg class="size-8 fill-current" viewBox="0 0 24 24">
+            <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.72.94 3.659 1.437 5.63 1.437h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z">
+            </path>
+        </svg>
+    </a>
+
+    <script>
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
@@ -413,11 +309,9 @@
                     observer.unobserve(entry.target);
                 }
             });
-        }, observerOptions);
-
+        }, { threshold: 0.1 });
         document.addEventListener('DOMContentLoaded', () => {
-            const scrollElements = document.querySelectorAll('.scroll-animate');
-            scrollElements.forEach(el => {
+            document.querySelectorAll('.scroll-animate').forEach(el => {
                 el.style.opacity = '0';
                 observer.observe(el);
             });
